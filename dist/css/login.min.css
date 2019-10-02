@@ -1,0 +1,329 @@
+@charset "UTF-8";
+body {
+  font-family: '微软雅黑';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: normal；;
+}
+
+body, ol, ul, li, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+  margin: 0;
+  padding: 0;
+}
+
+a, u {
+  text-decoration: none;
+}
+
+b, strong {
+  font-weight: normal;
+}
+
+i, em {
+  font-style: normal;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  border: 0;
+}
+
+input {
+  outline: none;
+  border: 0;
+}
+
+.clear_fix::after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.clear_fix {
+  zoom: 1;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+#header {
+  width: 100%;
+  height: 120px;
+  background: #fff;
+}
+
+#header .header_col {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+#header .header_col .logo {
+  margin-top: 20px;
+  float: left;
+}
+
+#header .header_col .logo img {
+  width: 344px;
+  height: 76px;
+}
+
+#header .header_col .right {
+  float: right;
+  font-size: 13px;
+  line-height: 120px;
+  color: #ccc;
+}
+
+#content {
+  width: 100%;
+  height: 600px;
+}
+
+#content .content_col {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+#content .content_col .content_right {
+  margin-top: 97px;
+  width: 400px;
+  height: 410px;
+  float: left;
+  background: pink;
+}
+
+#content .content_col .content_right .content_top {
+  height: 56px;
+  font-size: 16px;
+}
+
+#content .content_col .content_right .content_top h2 {
+  overflow: hidden;
+  color: #333333;
+}
+
+#content .content_col .content_right .content_top h2 .login_tab1 {
+  width: 90px;
+  height: 100%;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+  line-height: 56px;
+  border-bottom: 1px solid #f2f2f1;
+  border-radius: 4px;
+}
+
+#content .content_col .content_right .content_top h2 .login_tab2 {
+  width: 310px;
+  height: 100%;
+  line-height: 56px;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+  border-bottom: 1px solid #f2f2f1;
+  border-radius: 4px;
+}
+
+#content .content_col .content_right .content_top .login_list {
+  width: 312px;
+  margin: 0 auto;
+  margin-top: 23px;
+}
+
+#content .content_col .content_right .content_top .login_list .useName_login .user {
+  width: 300px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #deded3;
+  padding-left: 10px;
+  border-radius: 4px;
+}
+
+#content .content_col .content_right .content_top .login_list .useName_login .pwd {
+  width: 300px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #deded3;
+  margin-top: 10px;
+  padding-left: 10px;
+  border-radius: 4px;
+}
+
+#content .content_col .content_right .content_top .login_list .useName_login .ver {
+  margin-top: 10px;
+  height: 38px;
+}
+
+#content .content_col .content_right .content_top .login_list .useName_login .ver .ver_val {
+  width: 94px;
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  padding-left: 10px;
+  border: 1px solid #deded3;
+  border-radius: 4px;
+}
+
+#content .content_col .content_right .content_top .login_list .useName_login .ver .ver_num {
+  width: 94px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  float: left;
+  margin-left: 6px;
+  cursor: pointer;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+#content .content_col .content_right .content_top .login_list .useName_login .ver a {
+  padding-left: 5px;
+  padding-top: 0;
+  line-height: 38px;
+  color: green;
+  font-size: 14px;
+  float: left;
+}
+
+#content .content_col .content_right .content_top .login_list .useName_login .info {
+  margin-top: 20px;
+}
+
+#content .content_col .content_right .content_top .login_list .useName_login .info .rem {
+  color: #666666;
+  font-size: 14px;
+  float: left;
+  vertical-align: middle;
+  display: inline;
+  line-height: 16px;
+}
+
+#content .content_col .content_right .content_top .login_list .useName_login .info .rem #remember {
+  margin-top: 3px;
+  float: left;
+  display: inline;
+  margin-right: 5px;
+}
+
+#content .content_col .content_right .content_top .login_list .useName_login .info .forgeter {
+  float: right;
+  font-size: 14px;
+  display: inline;
+}
+
+#content .content_col .content_right .content_top .login_list .useName_login .info .forgeter a {
+  font-size: 14px;
+  color: green;
+  cursor: pointer;
+}
+
+#content .content_col .content_right .content_top .login_list .button {
+  margin-top: 20px;
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  color: green;
+  border-radius: 3px;
+}
+
+#content .content_col .content_right .content_top .login_list h3 {
+  width: 130px;
+  height: 21px;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: black;
+}
+
+#content .content_col .content_right .content_top .login_list h3 a {
+  color: green;
+}
+
+.content_top .login_list .usePhone_login .user {
+  width: 300px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #deded3;
+  border-radius: 4px;
+}
+
+.content_top .login_list .usePhone_login .ver_phone {
+  margin-top: 10px;
+}
+
+.content_top .login_list .usePhone_login .ver_phone .vel_value_phone {
+  float: left;
+  width: 112px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #deded3;
+  border-radius: 4px;
+}
+
+.content_top .login_list .usePhone_login .ver_phone .vel_num_phone {
+  margin-left: 6px;
+  float: left;
+  border: 2px solid red;
+  width: 114px;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 4px;
+}
+
+.content_top .login_list .usePhone_login .ver_phone a {
+  padding-left: 4px;
+  padding-top: 10px;
+  font-size: 14px;
+  line-height: 30px;
+  float: left;
+  color: green;
+}
+
+.content_top .login_list .usePhone_login .vel_mes {
+  margin-top: 10px;
+  width: 130px;
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #deded3;
+  padding-left: 10px;
+  border-radius: 4px;
+}
+
+.content_top .login_list .usePhone_login .get_mes {
+  margin-top: 10px;
+  height: 37px;
+  width: 130px;
+  margin-left: 5px;
+  color: green;
+  background: #fff;
+  float: right;
+  border: 1px solid green;
+  border-radius: 4px;
+}
+
+.content_top .login_list .usePhone_login span {
+  width: 258px;
+  height: 21px;
+  display: block;
+  float: left;
+  font-size: 14px;
+  color: #666666;
+  margin: 20px auto 0;
+}

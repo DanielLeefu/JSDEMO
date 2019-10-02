@@ -1,0 +1,174 @@
+@import 'public';
+// 尾部部分
+#footer{
+    width:100%;
+    background: #ccc;
+    .footer_2019{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
+        border-top: 1px solid #eeeeee;
+        background: #fff;
+     
+        padding-bottom: 50px;
+
+        // <!-- 贴心服务 -->
+
+        .help_icon_bg{
+            width: 100%;
+            height: 98px;
+            border-bottom: 1px solid #eeeeee;
+            .footer_col{
+                width: 1200px;
+                margin: 0 auto;
+                overflow: hidden;
+                padding-bottom: 30px;
+                li{ 
+                    @include float(left);
+                    width: 300px;
+                    height: 70px;
+                    margin-top:30px;
+                    p{
+                        width: 170px;
+                        height: 30px;
+                        display: inline-block;
+                        margin-left: 5px;
+                        color: #444444;
+                        font-size: 18px;
+                        font-family: "黑体";
+                    }
+                    span{
+                        height: 14px;
+                        text-align: left;
+                        display: block;
+                        color: #999999;
+                        font-size: 14px;
+                        font-weight: normal;
+                        font-family:"黑体";
+                    }
+                    .help_cold{
+                        width: 46px;
+                        height: 46px;
+                        display:inline-block;
+                        margin-right: 5px; 
+                        background:url(../img/footer_help_cold.min.png) no-repeat;
+                    }
+                    .help_deliver{
+                        width: 46px;
+                        height: 46px;
+                        display:inline-block;
+                        margin-right: 5px; 
+                        background:url(../img/footer_help_deliver.min.png) no-repeat;
+                    }
+                    .help_eat{
+                        width: 46px;
+                        height: 46px;
+                        display:inline-block;
+                        margin-right: 5px; 
+                        background:url(../img/footer_help_eat.min.png) no-repeat;
+                    }
+                    .help_heart{
+                        width: 46px;
+                        height: 46px;
+                        display:inline-block;
+                        margin-right: 5px; 
+                        background:url(../img/footer_help_heart.min.png) no-repeat;
+                    }
+                    
+
+                }
+            }
+        }
+
+        // 购物指南
+        .help_catalog_bg{
+            width: 100%;
+            border-bottom:1px solid #eeeeee;
+            .footer_col{
+                width: 1200px;
+                margin: 0 auto;
+                overflow: hidden;
+                padding-bottom: 30px;
+                li{
+                    width: 200px;
+                    @include float(left);
+                    padding-left: 0px;
+                    margin-top: 30px;
+                    h4{
+                        height: 22px;
+                        font-size:16px;
+                        text-align: left;
+                        color: green;
+                        font-family: "黑体"; 
+                    }
+                    a{
+                        height: 24px;
+                        line-height:24px;
+                        font-size: 12px;
+                        color: #666666;
+                        display: block;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+        // 友情链接
+
+        .ship_link{
+            margin: 0 auto;
+            overflow: hidden;
+            width: 1200px;
+            padding: 20px;
+            font-size: 12px;
+            line-height: 26px;
+            text-align: center;
+            margin-bottom: 8px;
+            a{
+                display: inline;
+                margin-right: 18px;
+                @include float(left);
+                color: #666;
+            }
+        }
+
+        // 版本所有
+
+        .company_register{
+            height: 67px;
+            margin: 10px auto;
+            margin-top: 20px;
+            text-align: center;
+            p{
+                height: 14px;
+                margin-bottom: 10px;
+                text-align: center;
+                font-size: 12px;
+                color: #666666;
+
+            }
+        }
+
+        // 图片info
+        .info{
+            width: 1200px;
+            height: 49px;
+            margin: 0 auto;
+            margin-top: 20px;
+            overflow: hidden;
+            ul{
+                width: 576px;
+                margin: 0 auto;
+                li{
+                    float: left;
+                    margin-right: 5px;
+                    img{
+                        width: 110px;
+                        height: 49px;
+                    }
+                }
+            }
+
+        }
+    }
+}

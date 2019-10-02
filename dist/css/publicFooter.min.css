@@ -1,0 +1,239 @@
+@charset "UTF-8";
+body {
+  font-family: '微软雅黑';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: normal；;
+}
+
+body, ol, ul, li, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+  margin: 0;
+  padding: 0;
+}
+
+a, u {
+  text-decoration: none;
+}
+
+b, strong {
+  font-weight: normal;
+}
+
+i, em {
+  font-style: normal;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  border: 0;
+}
+
+input {
+  outline: none;
+  border: 0;
+}
+
+.clear_fix::after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.clear_fix {
+  zoom: 1;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+#footer {
+  width: 100%;
+  background: #ccc;
+}
+
+#footer .footer_2019 {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-top: 1px solid #eeeeee;
+  background: #fff;
+  padding-bottom: 50px;
+}
+
+#footer .footer_2019 .help_icon_bg {
+  width: 100%;
+  height: 98px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+#footer .footer_2019 .help_icon_bg .footer_col {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
+#footer .footer_2019 .help_icon_bg .footer_col li {
+  float: left;
+  width: 300px;
+  height: 70px;
+  margin-top: 30px;
+}
+
+#footer .footer_2019 .help_icon_bg .footer_col li p {
+  width: 170px;
+  height: 30px;
+  display: inline-block;
+  margin-left: 5px;
+  color: #444444;
+  font-size: 18px;
+  font-family: "黑体";
+}
+
+#footer .footer_2019 .help_icon_bg .footer_col li span {
+  height: 14px;
+  text-align: left;
+  display: block;
+  color: #999999;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "黑体";
+}
+
+#footer .footer_2019 .help_icon_bg .footer_col li .help_cold {
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+  margin-right: 5px;
+  background: url(../img/footer_help_cold.min.png) no-repeat;
+}
+
+#footer .footer_2019 .help_icon_bg .footer_col li .help_deliver {
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+  margin-right: 5px;
+  background: url(../img/footer_help_deliver.min.png) no-repeat;
+}
+
+#footer .footer_2019 .help_icon_bg .footer_col li .help_eat {
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+  margin-right: 5px;
+  background: url(../img/footer_help_eat.min.png) no-repeat;
+}
+
+#footer .footer_2019 .help_icon_bg .footer_col li .help_heart {
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+  margin-right: 5px;
+  background: url(../img/footer_help_heart.min.png) no-repeat;
+}
+
+#footer .footer_2019 .help_catalog_bg {
+  width: 100%;
+  border-bottom: 1px solid #eeeeee;
+}
+
+#footer .footer_2019 .help_catalog_bg .footer_col {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
+#footer .footer_2019 .help_catalog_bg .footer_col li {
+  width: 200px;
+  float: left;
+  padding-left: 0px;
+  margin-top: 30px;
+}
+
+#footer .footer_2019 .help_catalog_bg .footer_col li h4 {
+  height: 22px;
+  font-size: 16px;
+  text-align: left;
+  color: green;
+  font-family: "黑体";
+}
+
+#footer .footer_2019 .help_catalog_bg .footer_col li a {
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  color: #666666;
+  display: block;
+  text-align: left;
+}
+
+#footer .footer_2019 .ship_link {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 1200px;
+  padding: 20px;
+  font-size: 12px;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+#footer .footer_2019 .ship_link a {
+  display: inline;
+  margin-right: 18px;
+  float: left;
+  color: #666;
+}
+
+#footer .footer_2019 .company_register {
+  height: 67px;
+  margin: 10px auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#footer .footer_2019 .company_register p {
+  height: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #666666;
+}
+
+#footer .footer_2019 .info {
+  width: 1200px;
+  height: 49px;
+  margin: 0 auto;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+#footer .footer_2019 .info ul {
+  width: 576px;
+  margin: 0 auto;
+}
+
+#footer .footer_2019 .info ul li {
+  float: left;
+  margin-right: 5px;
+}
+
+#footer .footer_2019 .info ul li img {
+  width: 110px;
+  height: 49px;
+}
