@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>用户中心_美鲜冻品商城_一站式餐饮原料供应商、全球直采、菜品研发、餐饮策划、美鲜金融、高端冷链仓配专家！  </title>
     <link rel="stylesheet" href="css/login.min.css">
-   <script src="js/jquery-1.12.4.js"></script>
-
-
+   <script src="js/jquery-1.12.4.min.js"></script>
+   <script src="js/jquery.cookie.min.js"></script>
 </head>
 <body>
     <div id="header">
@@ -28,6 +27,7 @@
             <div class="content_left fl">
                 <a href="index.html">
                     <img src="img/login-banner.min.jpg" alt="">
+
                 </a>
             </div>
 
@@ -45,8 +45,8 @@
                             <input type="text" class="pwd" placeholder="请输入密码">
                             <div class="ver">
                                 <input type="text" class="ver_val">
-                                <div class="ver_num">2222</div>
-                                <a href="javascript:;">刷新一下？</a>
+                                <div class="ver_num"></div>
+                                <a href="javascript:;" class="SXin">刷新一下？</a>
                             </div>
                             <div class="info clear_fix">
                                 <div class="rem">
@@ -62,12 +62,12 @@
                         </div>
                         <!-- 使用手机号登陆 -->
                         <div class="usePhone_login">
-                            <input type="text" placeholder="请输入手机号码" class="user">
+                            <input type="text" placeholder="请输入手机号码" class="user_phone">
 
                             <div class="ver_phone">
                                 <input type="text" class="vel_value_phone" placeholder="请输入右侧验证码">
-                                <div class="vel_num_phone">dfrg</div>
-                                <a href="#">刷新一下？</a>
+                                <div class="vel_num_phone"></div>
+                                <a class="SXin_phone" href="#">刷新一下？</a>
                             </div>
 
                             <input type="text" placeholder="请输入短信验证码" class="vel_mes">
@@ -89,5 +89,7 @@
             </div>
         </div>
     </div>
+    <script src="js/login.min.js"></script>
+    
 </body>
 </html>

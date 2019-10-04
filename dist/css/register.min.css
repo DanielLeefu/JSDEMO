@@ -1,0 +1,464 @@
+@charset "UTF-8";
+body {
+  font-family: '微软雅黑';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: normal；;
+}
+
+body, ol, ul, li, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+  margin: 0;
+  padding: 0;
+}
+
+a, u {
+  text-decoration: none;
+}
+
+b, strong {
+  font-weight: normal;
+}
+
+i, em {
+  font-style: normal;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  border: 0;
+}
+
+input {
+  outline: none;
+  border: 0;
+}
+
+.clear_fix::after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.clear_fix {
+  zoom: 1;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+#header {
+  width: 100%;
+  height: 120px;
+  background: #fff;
+}
+
+#header .top {
+  width: 990px;
+  margin: 0 auto;
+}
+
+#header .top .top_logo {
+  margin-top: 20px;
+}
+
+#header .top .top_logo img {
+  width: 344px;
+  height: 76px;
+}
+
+#header .top .top_hello {
+  line-height: 120px;
+  font-size: 13px;
+  color: #959595;
+}
+
+#header .top .top_hello .top_login {
+  margin-right: 16px;
+  line-height: 120px;
+  font-size: 13px;
+}
+
+#header .top .top_hello .top_login a {
+  color: green;
+}
+
+#header .top .top_hello .top_register a {
+  color: green;
+}
+
+#banner {
+  width: 100%;
+}
+
+#banner img {
+  width: 100%;
+  height: 100px;
+}
+
+#list {
+  width: 990px;
+  margin: 0 auto;
+  background: #fff;
+  padding-bottom: 50px;
+  border: 1px solid #f2f2f1;
+}
+
+#list .list_top {
+  border-bottom: 1px solid #f8f8f7;
+  height: 56px;
+  line-height: 56px;
+}
+
+#list .list_top h2 {
+  float: left;
+  margin-left: 50px;
+  font-size: 16px;
+  color: #333333;
+  font-weight: normal;
+}
+
+#list .list_top h3 {
+  float: right;
+  margin-right: 50px;
+  font-size: 16px;
+  color: #333333;
+  font-weight: normal;
+}
+
+#list .list_top h3 a {
+  color: green;
+}
+
+#list .list_register {
+  width: 446px;
+  margin-top: 30px;
+  margin-left: 78px;
+  color: #666666;
+  font-size: 13px;
+  float: left;
+  padding-bottom: 63px;
+}
+
+#list .list_register .register_phone {
+  height: 36px;
+  margin-bottom: 30px;
+  line-height: 36px;
+}
+
+#list .list_register .register_phone .yanZen {
+  width: 120px;
+  float: left;
+  text-align: right;
+}
+
+#list .list_register .register_phone .yanZen span {
+  margin-right: 10px;
+  color: #f00;
+}
+
+#list .list_register .register_phone .user_phone {
+  width: 290px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #deded3;
+  border-radius: 4px;
+  padding-left: 10px;
+  margin-left: 5px;
+  float: left;
+}
+
+#list .list_register .register_ma {
+  height: 36px;
+  margin-bottom: 30px;
+  line-height: 36px;
+}
+
+#list .list_register .register_ma .yanZen {
+  width: 120px;
+  float: left;
+  text-align: right;
+}
+
+#list .list_register .register_ma .yanZen span {
+  margin-right: 10px;
+  color: #f00;
+}
+
+#list .list_register .register_ma .YZM_value {
+  width: 114px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #deded3;
+  border-radius: 4px;
+  padding-left: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  float: left;
+}
+
+#list .list_register .register_ma .YZM_img {
+  float: left;
+  border: 1px solid red;
+  text-align: center;
+  line-height: 36px;
+  width: 114px;
+  height: 36px;
+  font-size: 18px;
+  color: green;
+}
+
+#list .list_register .register_ma .ShuX {
+  float: left;
+  padding-left: 4px;
+  padding-top: 4px;
+  line-height: 30px;
+  color: green;
+}
+
+#list .list_register .register_msg {
+  height: 36px;
+  margin-bottom: 30px;
+  line-height: 36px;
+}
+
+#list .list_register .register_msg .yanZen {
+  width: 120px;
+  float: left;
+  text-align: right;
+}
+
+#list .list_register .register_msg .yanZen span {
+  margin-right: 10px;
+  color: #f00;
+}
+
+#list .list_register .register_msg .YZM_msg {
+  width: 266px;
+  float: left;
+  color: #666666;
+  font-size: 13px;
+  position: relative;
+  line-height: 36px;
+}
+
+#list .list_register .register_msg .YZM_msg .YZM_msg_value {
+  width: 120px;
+  height: 36px;
+  float: left;
+  border: 1px solid red;
+  line-height: 36px;
+  padding-left: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 4px;
+}
+
+#list .list_register .register_msg .YZM_msg .YZM_send {
+  width: 110px;
+  height: 37px;
+  border: 1px solid green;
+  color: green;
+  background: #fff;
+  text-align: center;
+  margin-left: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#list .list_register .register_pwd {
+  height: 45px;
+  margin-bottom: 30px;
+  line-height: 36px;
+}
+
+#list .list_register .register_pwd .yanZen {
+  width: 120px;
+  float: left;
+  text-align: right;
+}
+
+#list .list_register .register_pwd .yanZen span {
+  margin-right: 10px;
+  color: #f00;
+}
+
+#list .list_register .register_pwd .pwd {
+  width: 290px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 4px;
+  border: 1px solid #deded3;
+  padding-left: 10px;
+  float: left;
+  margin-left: 5px;
+}
+
+#list .list_register .register_pwd .pwd_not {
+  width: 280px;
+  height: 20px;
+  line-height: 25px;
+  float: left;
+  text-align: left;
+  color: green;
+}
+
+#list .list_register .register_pwd .QD {
+  width: 144px;
+  height: 37px;
+  float: right;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ccc;
+  margin-right: 94px;
+}
+
+#list .list_register .register_pwd .QD .pwd_low {
+  float: left;
+  width: 48px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+
+#list .list_register .register_pwd .QD .pwd_mid {
+  float: left;
+  width: 48px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+
+#list .list_register .register_pwd .QD .pwd_hig {
+  float: left;
+  width: 48px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+
+#list .list_register .really_pwd {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  height: 45px;
+  line-height: 36px;
+}
+
+#list .list_register .really_pwd .yanZen {
+  margin-top: 30px;
+  width: 120px;
+  float: left;
+  text-align: right;
+}
+
+#list .list_register .really_pwd .yanZen span {
+  margin-right: 10px;
+  color: #f00;
+}
+
+#list .list_register .really_pwd .rea_pwd_value {
+  width: 290px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #deded3;
+  border-radius: 4px;
+  padding-left: 10px;
+  float: left;
+  margin-left: 5px;
+}
+
+#list .list_register .really_pwd .pwd_title {
+  width: 280px;
+  height: 20px;
+  line-height: 25px;
+  color: #f00;
+  float: left;
+  padding-left: 120px;
+}
+
+#list .list_register .user_btn .xieyi {
+  font-size: 14px;
+  float: left;
+  width: 264px;
+  margin-left: 120px;
+  line-height: 36px;
+  color: #666666;
+}
+
+#list .list_register .user_btn .xieyi input {
+  float: left;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+#list .list_register .user_btn .xieyi span a {
+  color: green;
+}
+
+#list .list_register .user_btn .btn {
+  margin-top: 20px;
+  margin-left: 120px;
+  float: left;
+  width: 264px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  border-radius: 4px;
+  background: green;
+  color: #fff;
+  text-align: center;
+}
+
+#list .list_images {
+  width: 378px;
+  float: right;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+#bottom {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+#bottom .bottom_col {
+  height: 141px;
+  width: 990px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#bottom .bottom_col p {
+  text-align: center;
+  font-size: 13px;
+  color: #959595;
+  line-height: 24px;
+}
+
+#bottom .bottom_col .bottom_pic {
+  text-align: center;
+  margin-top: 20px;
+  height: 49px;
+  width: 440px;
+  margin: 0 auto;
+}
+
+#bottom .bottom_col .bottom_pic img {
+  width: 110px;
+  height: 49px;
+  float: left;
+}

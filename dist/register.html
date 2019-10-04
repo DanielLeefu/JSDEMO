@@ -4,9 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>注册</title>
+    <link rel="stylesheet" href="css/register.min.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.cookie.min.js"></script>
 </head>
 <body>
-    <h1>注册</h1>
-</body>
+    <!-- header -->
+    <div id="header">
+        <div class="top clear_fix">
+            <!-- logo -->
+            <div class="top_logo fl">
+                <a href="index.html">
+                    <img src="img/logo.min.jpg" alt="">
+                </a>
+            </div>
+
+            <!-- right -->
+            <div class="top_hello fr">
+                    嘿，欢迎来到美鲜冻品商城！
+                    <span class="top_login">
+                        <a href="login.html">
+                             请登陆
+                        </a>
+                       </span>
+                    <span class="top_register">
+                        <a href="register.html">
+                              免费注册
+                        </a>
+                      </span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- banner -->
+    <div id="banner">
+        <a href="404.html">
+            <img src="img/register/img/register_banner.min.jpg" alt="">
+        </a>
+    </div>
+
+    <!-- 表单 -->
+    <div id="list" class="clear_fix">
+            <div class="list_top clear_fix">
+                <h2>注册新用户</h2>
+                <h3>
+                    已经注册,<a href="login.html">现在登陆 > </a>
+                </h3>
+            </div>  
+
+            <!-- register -->
+            <div class="list_register">
+                <!-- 验证手机 -->
+                <div class="register_phone clear_fix">
+                    <div class="yanZen">
+                        <span>*</span>
+                        验证手机:
+                    </div>
+                    <input class="user_phone" type="text" placeholder="请输入手机号">
+                </div>
+
+                <!-- 验证码 -->
+                <div class="register_ma clear_fix">
+                        <div class="yanZen">
+                            <span>*</span>
+                            验证码:
+                        </div>
+                        <input class="YZM_value" type="text" placeholder="请输右侧验证码">
+
+                        <div class="YZM_img"></div>
+
+                        <a class="ShuX" href="javascript:;">刷新一下？</a>
+                </div>
+
+                <!-- 短信验证码 -->
+                <div class="register_msg clear_fix">
+                    <div class="yanZen">
+                            <span>*</span>
+                           短信验证码:
+                    </div>
+                    <div class="YZM_msg">
+                        <input type="text" class="YZM_msg_value">
+                        <input type="button" class="YZM_send" value="获取短信验证码">
+                    </div>
+                </div>
+
+                <!-- 密码 -->
+                <div class="register_pwd clear_fix">
+                        <div class="yanZen">
+                            <span>*</span>
+                            输入密码:
+                        </div>
+                        <input class="pwd" type="text" placeholder="请输密码">
+                        <div class="pwd_not"></div>
+                        <div class="QD">
+                            <div class="pwd_low">弱</div>
+                            <div class="pwd_mid">中</div>
+                            <div class="pwd_hig">强</div>
+                        </div>
+                </div>    
+
+                <!-- 确认密码 -->
+                <div class="really_pwd">
+                    <div class="yanZen">
+                                <span>*</span>
+                                确认密码:
+                    </div>
+                    <input type="text" class="rea_pwd_value" placeholder="请再次输入密码">
+                    <div class="pwd_title"></div>
+                </div>
+
+                <!-- 用户协议 -->
+                <div class="user_btn clear_fix">
+                    <div class="xieyi">
+                        <input type="checkbox" value="1">
+                        我已同意并阅读
+                        <span>
+                            <a href="404.html">用户协议</a>
+                        </span>
+                    </div>
+
+                    <div class="btn">
+                        提交
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- image -->
+            <div class="list_images">
+                <img src="img/register/img/regist_ma.min.jpg" alt="">
+            </div>
+    </div>
+
+
+<!-- bottom -->
+
+<div id="bottom">
+
+    <div class="bottom_col">
+        <p>
+                © 2005-2015 美鲜冻品商城 版权所有，并保留所有权利。<br>
+                济南市历下区龙奥北路8号海尔玉兰广场5号楼606 Tel: 4006-728-726 <br>
+                ICP备案证书号:鲁ICP备11002915号<br>
+        </p>
+        <div class="bottom_pic clear_fix">
+            <img src="img/register/img/register_chenxin.min.jpg" alt="">
+            <img src="img/register/img/register_gongshang.min.jpg" alt="">
+            <img src="img/register/img/register_zhifubao.min.jpg" alt="">
+            <img src="img/register/img/register_xuke.min.jpg" alt="">
+
+        </div>
+    </div>
+
+</div>
+
+<script src="js/register.min.js"></script>
+</body>    
 </html>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>美鲜冻品商城_一站式餐饮原料供应商、全球直采、菜品研发、餐饮策划、美鲜金融、高端冷链仓配专家！</title>
     <link rel="shortcut icon" href="favicon.ico">
-   <script src="js/jquery-1.12.4.js"></script>
+   <script src="js/jquery-1.12.4.min.js"></script>
 </head>
 <body>
     <!-- 加载公共头部 -->
@@ -18,12 +18,18 @@
         <p>我在中间</p>
     </div>
 
+    <!-- 加载公共尾部 -->
+    <div id="publicFooter">
+
+    </div>
 
 <!-- 引入 -->
 <script type="text/javascript">
-    $(document).ready(function(){
+    
         $('#publicHeader').load('publicHeader.html');
-    })
+        $('#publicFooter').load('publicFooter.html');
+
+
 </script>
  
 </body>

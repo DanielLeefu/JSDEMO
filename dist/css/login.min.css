@@ -255,7 +255,11 @@ input {
   color: green;
 }
 
-.content_top .login_list .usePhone_login .user {
+.content_top .login_list .usePhone_login {
+  display: none;
+}
+
+.content_top .login_list .usePhone_login .user_phone {
   width: 300px;
   height: 36px;
   line-height: 36px;

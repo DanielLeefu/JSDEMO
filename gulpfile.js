@@ -40,15 +40,24 @@ gulp.task('img', () => {
     .pipe(gulp.dest('./dist/img'))
 })
 
+// 发布任务将register img压缩
+gulp.task('register_img', () => {
+    gulp.src('./src/img/register/img/*.*')
+        .pipe(imagemin())
+        .pipe(rename({suffix:'.min'}))
+    .pipe(gulp.dest('./dist/img/register/img'))
+})
+
+
 
 
 // 发布任务添加监听
 gulp.task('default', () => { 
     // es6转es5
-    // gulp.watch('./src/js/es6/*.js',['babel']);
+    gulp.watch('./src/js/es6/*.js',['babel']);
     // es5压缩
-    // gulp.watch('./src/js/es5/*.js',['uglify']);
+    gulp.watch('./src/js/es5/*.js',['uglify']);
     // css压缩
-    gulp.watch('./src/sass/*.scss', [sass]);
-    // gulp.watch('./src/*.png',['img']);
+    // gulp.watch('./src/sass/*.scss', [sass]);
+    // gulp.watch('./src/img/*.*',['img']);
 })
