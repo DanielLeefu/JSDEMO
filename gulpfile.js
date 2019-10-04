@@ -58,6 +58,6 @@ gulp.task('default', () => {
     // es5压缩
     gulp.watch('./src/js/es5/*.js',['uglify']);
     // css压缩
-    // gulp.watch('./src/sass/*.scss', [sass]);
+    gulp.watch('./src/sass/*.scss', [sass]);
     // gulp.watch('./src/img/*.*',['img']);
 })

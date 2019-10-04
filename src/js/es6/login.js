@@ -13,12 +13,12 @@ $('.pwd').val(cookieObjMsg['pwd']);
 $('.login_tab1').click(function () { 
     
     $(this).css({
-        background: '#ccc',
-        borderTop : '1px solid black'
+        background: '#fff',
+        borderTop : '1px solid #f2f2f1'
     });
     $('.login_tab2').css({
         borderTop: 'none',
-        background : 'pink'
+        background : '#ccc'
     })
     $('.useName_login').css({
         display: 'block'
@@ -26,16 +26,19 @@ $('.login_tab1').click(function () {
     $('.usePhone_login').css({
         display: 'none'
     })
+    $('.button').css({ display: 'block' })
+    $('.button2').css({display : 'none'})
+    
 })
 
 $('.login_tab2').click(function () { 
     $(this).css({
-        background: '#ccc',
-        borderTop : '1px solid black'
+        background: '#fff',
+        borderTop : '1px solid #f2f2f1'
     });
     $('.login_tab1').css({
         borderTop: 'none',
-        background : 'pink'
+        background : '#ccc'
     })
     $('.useName_login').css({
         display: 'none'
@@ -43,6 +46,8 @@ $('.login_tab2').click(function () {
     $('.usePhone_login').css({
         display: 'block'
     })
+    $('.button2').css({ display: 'block' })
+    $('.button').css({display : 'none'})
 })
 
 
@@ -53,7 +58,8 @@ $('.ver_val').blur(function () {
     let ver_num = $('.ver_num').text();
     if ($(this).val() === ver_num) {    
     } else {
-          alert('请输入正确的验证码');
+        alert('请输入正确的验证码');
+        return;
     }
 })
 
@@ -85,32 +91,34 @@ $('.button').click(function () {
         if (cookieObj[user] === pwd) {
 
             // 记住我(选中了为基数)
-                let count = 0;
-                $('#remember').click(function () {
-                    count++;
-                    console.log(count);
-                    if (count % 2 === 1) { 
-                        //    创建cookie
-                        let cookieObj = {
-                            user: $('.user').val(),
-                            pwd : $('.pwd').val()
-                        }
-                        $.cookie('loginMsg', JSON.stringify(cookieObj), {
-                            expires: 7,
-                            path : '/'
+                // let count = 0;
+                // $('#remember').click(function () {
+                //     count++;
+                //     console.log(count);
+                //     if (count % 2 === 1) { 
+                //         //    创建cookie
+                //         let cookieObj = {
+                //             user: $('.user').val(),
+                //             pwd : $('.pwd').val()
+                //         }
+                //         $.cookie('loginMsg', JSON.stringify(cookieObj), {
+                //             expires: 7,
+                //             path : '/'
 
-                        })
+                //         })
 
-                    }
-                })
+                //     }
+                // })
             
             location.href = 'index.html';
             return;
         } else {
             alert('密码错误');
+            return;
         }
     } else { 
         alert('用户名不存在');
+        return;
     }
 
 
@@ -179,6 +187,7 @@ $('.user_phone').blur = function () {
     let re = /0?(13|14|15|18|17)[0-9]{9}/;
     if (!re.test(str)) { 
         alert('请输入正确的手机号');
+        return;
     }
 }
 
@@ -187,7 +196,8 @@ $('.vel_value_phone').blur(function () {
     let ver_num = $('.vel_num_phone').text(); 
     if ($(this).val() === ver_num) {    
     } else {
-          alert('请输入正确的验证码');
+        alert('请输入正确的验证码');
+        return;
     }
 })
 
@@ -206,8 +216,22 @@ $('.SXin_phone').click(function () {
 
 
 
+// 手机号登录
+$('.button2').click(function () {
 
 
+    let user = $('.user_phone').val();
+    let ver_val = $('.vel_value_phone').val();
+    if (!user && !ver_val) { 
+        alert('用户名验证码不能为空');
+        return;
+    }
 
+   
 
-
+    let cookieStr = $.cookie('register') ? $.cookie('register') : '';
+    let cookieObj = cookieStrToObj(cookieStr);
+    if (user in cookieObj) {
+        location.href = 'index.html';
+    }
+})

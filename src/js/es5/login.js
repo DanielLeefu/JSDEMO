@@ -10,34 +10,46 @@ $('.pwd').val(cookieObjMsg['pwd']); // 点击改变按钮背景颜色
 
 $('.login_tab1').click(function () {
   $(this).css({
-    background: '#ccc',
-    borderTop: '1px solid black'
+    background: '#fff',
+    borderTop: '1px solid #f2f2f1'
   });
   $('.login_tab2').css({
     borderTop: 'none',
-    background: 'pink'
+    background: '#ccc'
   });
   $('.useName_login').css({
     display: 'block'
   });
   $('.usePhone_login').css({
+    display: 'none'
+  });
+  $('.button').css({
+    display: 'block'
+  });
+  $('.button2').css({
     display: 'none'
   });
 });
 $('.login_tab2').click(function () {
   $(this).css({
-    background: '#ccc',
-    borderTop: '1px solid black'
+    background: '#fff',
+    borderTop: '1px solid #f2f2f1'
   });
   $('.login_tab1').css({
     borderTop: 'none',
-    background: 'pink'
+    background: '#ccc'
   });
   $('.useName_login').css({
     display: 'none'
   });
   $('.usePhone_login').css({
     display: 'block'
+  });
+  $('.button2').css({
+    display: 'block'
+  });
+  $('.button').css({
+    display: 'none'
   });
 }); // 使用用户名登陆
 // 判断输入正确的验证码
@@ -47,6 +59,7 @@ $('.ver_val').blur(function () {
 
   if ($(this).val() === ver_num) {} else {
     alert('请输入正确的验证码');
+    return;
   }
 }); // 刷新验证码
 
@@ -75,30 +88,31 @@ $('.button').click(function () {
   if (user in cookieObj) {
     if (cookieObj[user] === pwd) {
       // 记住我(选中了为基数)
-      var count = 0;
-      $('#remember').click(function () {
-        count++;
-        console.log(count);
-
-        if (count % 2 === 1) {
-          //    创建cookie
-          var _cookieObj = {
-            user: $('.user').val(),
-            pwd: $('.pwd').val()
-          };
-          $.cookie('loginMsg', JSON.stringify(_cookieObj), {
-            expires: 7,
-            path: '/'
-          });
-        }
-      });
+      // let count = 0;
+      // $('#remember').click(function () {
+      //     count++;
+      //     console.log(count);
+      //     if (count % 2 === 1) { 
+      //         //    创建cookie
+      //         let cookieObj = {
+      //             user: $('.user').val(),
+      //             pwd : $('.pwd').val()
+      //         }
+      //         $.cookie('loginMsg', JSON.stringify(cookieObj), {
+      //             expires: 7,
+      //             path : '/'
+      //         })
+      //     }
+      // })
       location.href = 'index.html';
       return;
     } else {
       alert('密码错误');
+      return;
     }
   } else {
     alert('用户名不存在');
+    return;
   }
 }); //    // 记住我(选中了为基数)
 //    let count = 0;
@@ -151,6 +165,7 @@ $('.user_phone').blur = function () {
 
   if (!re.test(str)) {
     alert('请输入正确的手机号');
+    return;
   }
 }; // // 判断输入正确的验证码
 
@@ -160,6 +175,7 @@ $('.vel_value_phone').blur(function () {
 
   if ($(this).val() === ver_num) {} else {
     alert('请输入正确的验证码');
+    return;
   }
 }); // 生成随机数
 
@@ -174,4 +190,21 @@ function randomNum() {
 
 $('.SXin_phone').click(function () {
   randomNum();
+}); // 手机号登录
+
+$('.button2').click(function () {
+  var user = $('.user_phone').val();
+  var ver_val = $('.vel_value_phone').val();
+
+  if (!user && !ver_val) {
+    alert('用户名验证码不能为空');
+    return;
+  }
+
+  var cookieStr = $.cookie('register') ? $.cookie('register') : '';
+  var cookieObj = cookieStrToObj(cookieStr);
+
+  if (user in cookieObj) {
+    location.href = 'index.html';
+  }
 });
