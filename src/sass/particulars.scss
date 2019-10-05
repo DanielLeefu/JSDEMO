@@ -1,0 +1,523 @@
+@import "public";
+#banner_col{
+    margin:0 auto;
+    width: 1200px;
+    overflow: hidden;
+    .header{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        display: block;
+        border-bottom:1px solid #eeeeee;
+        font-size: 12px;
+        color: #666666; 
+        .local{
+            margin-left: 5px;
+            a{
+                color: #666666;
+            }
+        }
+        .shop_sign{
+            padding: 10px 0;
+            height: 20px;
+            line-height: 40px;
+            color: #666;
+            i{
+                width: 20px;
+                height: 20px;
+                float: left;
+                background: url(../img/particulars/img/shop.min.png);
+
+            }
+            .shop_name{
+                height: 18px;
+                line-height: 18px;
+                padding: 0 5px;
+                color: #e84c3d;
+                border: 1px solid #e84c3d;
+                float: left;
+                a{
+                    color: #e84c3d;
+                    float: left;
+                }
+                em{
+                    width: 9px;
+                    height: 5px;
+                    background: url(../img/particulars/img/xia.min.jpg);
+                    margin-left: 5px;
+                    margin-top: 7px;
+                    float: left;
+                }
+            }
+        }
+
+        .shop_sign1{
+            padding: 20px 10px 0 0;
+            height: 20px;
+            line-height: 40px;
+            color: #666;
+            display: none;
+            i{
+                width: 20px;
+                height: 20px;
+                float: left;
+                background: url(../img/particulars/img/shop.min.png);
+
+            }
+            .shop_name{
+                height: 18px;
+                line-height: 18px;
+                padding: 0 5px;
+                color: #e84c3d;
+                border: 1px solid #e84c3d;
+                float: left;
+                a{
+                    color: #e84c3d;
+                    float: left;
+                }
+                em{
+                    width: 9px;
+                    height: 5px;
+                    background: url(../img/particulars/img/shang.min.jpg);
+                    margin-left: 5px;
+                    margin-top: 7px;
+                    float: left;
+                }
+            }
+        }
+
+    }
+}
+
+#main{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 40px;
+    // 放大镜
+    .main_l{
+        width: 430px;
+        background: #fff;
+        .magnify{
+            width: 352px;
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+
+        .magnify_foot{
+            width: 350px;
+            height: 30px;
+            margin-left: 60px;
+            font-size: 12px;
+            color: #999999;
+            margin-top: 10px;
+            .num_id{
+                width: 140px;
+            }
+            .like_btn{
+                width: 90px;
+                height: 15px;
+                line-height: 15px;
+                .like{
+                    width: 20px;
+                    height: 15px;
+                    background:url(../img/particulars/img/like.min.jpg) no-repeat;
+                }
+            }
+        }
+    }
+    // 右边
+    .main_r{
+        width: 770px;
+        // overflow: hidden;
+        position: relative;
+        background: #fff;
+        .main_r_content{
+                 .enToCh{
+                    width: 46px;
+                    height: 14px;
+                    position: absolute;
+                    z-index: 10;
+                    right: 0;
+                    top: 44px;
+                    color: #999;
+                    font-size: 12px;
+                    cursor: pointer;
+                    background: url(../img/particulars/img/EN.min.png) no-repeat top right; 
+            }
+           .CH{
+                font-size: 24px;
+                color: #333;
+                line-height: 32px;
+                margin-top: 30px;
+                margin-bottom: 15px;
+                font-weight: normal;
+                overflow: hidden;
+            }
+            .sub_text{
+                height: 55px;
+                width: 100%;
+                overflow: hidden;
+                display: block;
+                font-size: 12px;
+                color: green;
+                line-height: 18px;
+                margin-bottom: 10px;
+            }
+            .price{
+                padding: 10px 20px 5px 20px;
+                position: relative;
+                width: 100%;
+                background: #FAFAFC;
+                ul{
+                    li{
+                        float: left;
+                        height: 40px;
+                        line-height: 40px;
+                        .text_inter{
+                            font-size: 12px;
+                            color: #999999;
+
+                        }
+                        .text_price{
+                            font-weight: bold;
+                            font-size: 18px;
+                            color: #e4462c;
+                        }
+                        .text_pic{
+                                width: 16px;
+                                height: 16px;
+                                float: left;
+                                margin-left: 10px;
+                                margin-top: 12px;
+                                background: url(../img/particulars/img/text_price.min.gif) no-repeat;
+                        }
+                        .text_pic_p{
+                            display: none;
+                            position: absolute;
+                            top: 60px;
+                            left: 65px;
+                            width: 250px;
+                            height: 70px;
+                            font-size: 12px;
+                            color: green;
+                            background: #EfffF4;
+                            border: 1px solid green;
+                            line-height:14px;
+                            z-index: 666;
+                            span{
+                                width: 250px;
+                                height: 70px;
+                                padding: 5px;
+                                display: block;
+
+                            }
+                            i{
+                                position: absolute;
+                                bottom: 65px;
+                                left: 100px; 
+                                width: 20px;
+                                height: 20px;
+                             
+                                background-position: top center;
+                                float: left;
+                                background: url(../img/particulars/img/text_pic.min.jpg);  
+                                 background-repeat: no-repeat;
+                            }
+                        }
+                        a{
+                            font-size: 12px;
+                            color: #999999;
+                            margin-left: 14px;
+                        }
+                    }
+                    .show_pan:hover .text_pic_p{
+                        display: block;
+                    }
+                }
+            }
+
+            .msg{
+                width: 100%;
+                display: block;
+                margin-left: 20px;
+                padding-bottom: 10px;
+                margin-top: 10px;
+               .title{
+                   font-size: 12px;
+                   height: 25px;
+                   line-height: 25px;
+                   color: #999999;
+               }
+               .title1{
+                font-size: 12px;
+                height: 25px;
+                line-height: 25px;
+                color: #999999;
+               }
+            }
+            .num{
+                width: 100%;
+                padding-top: 10px;
+                padding-left: 20px;
+                border-top: 1px solid #eeeeee;
+                .buy_peo{
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 12px;
+                    color: #999;
+                    a{
+                        color: #333;
+                        display:inline-block;
+                        width: 60px;
+                        text-align: center;
+                        height: 30px;
+                        line-height: 30px;
+                        border: 1px solid #eeeeee;
+                        margin-left: 3px;
+
+                    }
+                    .one{
+                        background: url(../img/particulars/img/duigou.min.jpg) right bottom no-repeat ;
+                        border: 1px solid green;
+                    }
+                   
+                }
+                .buy_num{
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 12px;
+                    color: #999;
+                    margin-top: 10px;
+                   margin-bottom:10px; 
+                    em{
+                        float: left;
+                        margin-right: 16px;
+                    }
+                    a{
+                        color: #333;
+                        display:inline-block;
+                        width: 24px;
+                        text-align: center;
+                        height: 30px;
+                        line-height: 30px;
+                        border: 1px solid #eeeeee;
+                        float: left;
+
+                    }
+                    input{
+                        width: 40px;
+                        height: 30px;
+                        border: 1px solid #dddddd;
+                        text-align: center;
+
+                        float: left;
+                    }
+                    i{
+                        margin: 0 10px;
+                        color: green;
+                    }
+                }
+            }
+        }
+
+    .main_r_btn{
+        width: 100%;
+        height: 62px;
+        display: block;
+        margin-top: 10px;
+        padding-top: 20px;
+        padding-left: 20px;
+        border-top: 1px solid #dddddd;
+        .Buy_Btn1{
+            width: 172px;
+            height: 43px;
+            text-align: center;
+            line-height: 43px;
+            font-weight: bold;
+            color: #fff;
+            background: orange;
+            border-radius: 3px;
+            box-shadow: 1px 1px 1px 1px #EfffF4;
+            margin-right: 5px;
+            font-size: 16px;
+
+        }
+        .Buy_Btn2{
+            width: 172px;
+            height: 43px;
+            text-align: center;
+            line-height: 43px;
+            font-weight: bold;
+            color: #fff;
+            background: green;
+            font-size: 16px;
+            border-radius: 3px;
+            box-shadow: 1px 1px 1px 1px #EfffF4;
+        }
+    }
+    .main_r_tip{
+        font-size: 12px;
+        height: 80px;
+        line-height: 30px;
+        color: #999;
+        padding-left: 20px;
+        position: relative;
+        span{
+            width:20px;
+            height: 10px;
+            display: inline-block; 
+            margin-left: 5px;
+            background: url(../img/particulars/img/like_full.min.jpg) no-repeat;
+        }
+        .tip_tip{
+            display: none;
+            width: 225px;
+            height: 38px;
+            color: green;
+            background: #fff;
+            border: 1px solid green;
+            text-align: center;
+            line-height: 38px;
+            position: absolute;
+            top: 26px;
+            right: 528px;
+            z-index: 666;
+        }
+    }
+       
+    }
+}
+
+
+// 脚步
+#footer{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    .footer_left{
+        width: 947px;
+        overflow: hidden;
+        .tab_content{
+            width: 950px;
+            .control{
+                width: 940px;
+                height: 50px;
+                display: block;
+                background-color: #FAFAFC;
+                border: 1px solid #EEEEEE;
+                border-bottom: 1px solid #1A9733;
+                li{
+                    float: left;
+                    width: 160px;
+                    height: 50px;
+                    text-align: center;
+                    font-size: 16px;
+                    line-height: 50px;
+                    a{
+                        color: #333;
+                    }
+
+                }
+                .active{
+                    background: green;
+                    a{
+                        color: #fff;
+                    }
+                }
+                
+               
+            }
+            .tab_detail{
+                width: 947px;
+                background: #fff;
+                display: none;
+            }
+            .show{
+                display: block;
+            }
+        }
+    }
+    // you
+    .footer_right{
+        width: 230px;
+        border: 1px solid #eeeeee;
+        overflow: hidden; 
+        .footer_list1{
+            width: 230px;
+            height: 420px;
+            margin: 0 auto;
+            background: pink;
+        }
+        .footer_list2{
+            width: 190px;
+            height: 100px;
+            border-bottom: 1px solid #eeeeee;
+            overflow: hidden;
+            padding: 0 20px;
+            h4{
+                width: 90px;
+                height: 22px;
+                margin-top: 30px;
+                margin-bottom: 10px;
+                font-size: 16px;
+                color: green;
+                font-weight: bold;
+            }
+            p{
+                width: 70px;
+                height: 30px;
+                a{
+                    text-indent: 10px;
+                    font-size: 12px;
+                    color: #666;
+                }
+            }
+        }
+        .footer_body_like{
+            padding: 0 20px;
+            width: 190px;
+            h4{
+                width: 90px;
+                height: 22px;
+                margin-top: 30px;
+                margin-bottom: 10px;
+                font-size: 16px;
+                color: green;
+                font-weight: bold;
+            }
+            li{
+                a{
+                    color: #666666;
+                    img{
+                        margin: 0 auto;
+                        width: 150px;
+                        height: 150px;
+                        margin: 10px 0;
+                        display: block;
+                    }
+                    p{
+                        width: 144px;
+                        height: 35px;
+                        display: block;
+                        margin: 0 auto;
+                        margin-bottom: 5px;
+                        overflow: hidden;
+                        font-size: 12px;
+                        color: #666666;
+                        line-height: 18px;
+                    }
+                    span{
+                        width: 144px;
+                        height: 26px;
+                        display: block;
+                        margin: 0 auto;
+                        font-family: verdana;
+                        font-size: 18px;
+                        color: #E4462C;
+                    }
+                }
+            }
+        }
+    }
+}
