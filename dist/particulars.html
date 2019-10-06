@@ -61,12 +61,35 @@
              <s>美鲜自营</s>
              <span>济南仓</span>
          </div>
+         <div class="wrap_top_clear"></div>
+         <ul class="right_quick_list">
+
+         </ul>
+
+         <!-- <ul class="right_quick_list">
+                <li>
+                    <div class="list_cart_img">
+                        <a href="particulars.html">
+                            <img src="img/particulars/img/particulars_img2.min.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="list_cart_msg">
+                       <p>Murray Goulburn MG马苏里拉芝士 顶级芝士 10kg/块 2块/箱 (单块)</p> 
+                       <span>
+                            <em>515</em>
+                            <i>*5</i>
+                       </span>
+                       <a href="javascript:;">删除</a>
+                    </div>
+                </li>
+             </ul> -->
+
         <div class="wrap_bottom">
             <div class="wrap_bottom_left">
                 共
-                <span>6</span>
+                <span class="buy_num_span"></span>
                 件商品   &nbsp;&nbsp;共计
-                <span>￥1234</span>
+                <span class="buy_num_all"></span>
             </div>
             <div class="wrap_bottom_right">
                 <a href="cart.html">去购物车</a>
@@ -222,9 +245,9 @@
 
                         <em>购买数量:</em>
 
-                        <a href="#" class="btn_jie">-</a>
+                        <a href="javascript:;" class="btn_jie">-</a>
                         <input class="input_value" type="text" value="1">
-                        <a href="#" class="btn_add">+</a>
+                        <a href="javascript:;" class="btn_add">+</a>
                         <i> 库存充足</i>
 
 
@@ -254,7 +277,7 @@
 
     <!-- footer -->
 
-    <div id="footer" class="clear_fix">
+    <div id="footer_one" class="clear_fix">
         <!-- 左板块 -->
         <div class="footer_left fl">
             <div class="tab_content">
@@ -310,17 +333,44 @@
                         </span>
                     </a>
                 </li>
+                <li>
+                        <a href="list.html">
+                            <img src="img/particulars/img/particulars_img2.min.jpg" alt="">
+                            <p>安佳 安佳马苏里拉芝士碎 拉丝芝士 新西兰进口 12公斤/箱</p>
+                            <span>
+                                ￥495.00元
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                            <a href="list.html">
+                                <img src="img/particulars/img/particulars_img2.min.jpg" alt="">
+                                <p>安佳 安佳马苏里拉芝士碎 拉丝芝士 新西兰进口 12公斤/箱</p>
+                                <span>
+                                    ￥495.00元
+                                </span>
+                            </a>
+                        </li>
             </div>
 
         </div>
+      
+    
     </div>
 
+
+  <!-- 加载公共头部 -->
+<div id="publicFooter">
+       
+    </div>
 
 
 
 
     <script type="text/javascript">
         $('#publicHeader').load('publicHeader.html');
+        $('#publicFooter').load('publicFooter.html');
+
     </script>
     <script src="js/particulars.min.js"></script>
 </body>
