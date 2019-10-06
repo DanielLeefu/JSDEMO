@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/publicHeader.min.css">
     <link rel="stylesheet" href="font/iconfont.css">
+  
 </head>
 
 <body>
@@ -47,7 +48,7 @@
                     <a href="#">
                         <span class="iconfont icon-gouwuche"></span>
                         我的购物车
-                        <i class="num">22</i>
+                        <i class="num public_buy_num"></i>
                         <i class="iconfont icon-xiajiantou"></i>
                     </a>
                 </li>
@@ -1023,7 +1024,26 @@
 
     <!-- 下面是正文了 -->
    
+<script>
+    // 初始化购物车的cookie
+    init1();
+function init1() { 
+    let SPid = $('.SPid').text();
 
+    let cookieStr = $.cookie('carts') ? $.cookie('carts') : '';
+    let cookieObj = cookieStrToObj(cookieStr);
+    let sum = 0;
+    for (SPid in cookieObj) { 
+        sum += cookieObj[SPid].num;
+    }
+    // 公共头部的购物车
+    $('.public_buy_num').text(`${sum}`);
+
+
+}
+
+
+</script>
 </body>
 
 </html>
