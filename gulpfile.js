@@ -56,7 +56,13 @@ gulp.task('particulars_img', () => {
     .pipe(gulp.dest('./dist/img/particulars/img'))
 })
 
-
+// 发布任务将cart img压缩
+gulp.task('cart_img', () => {
+    gulp.src('./src/img/cart/img/*.*')
+        .pipe(imagemin())
+        .pipe(rename({suffix:'.min'}))
+    .pipe(gulp.dest('./dist/img/cart/img'))
+})
 
 // 发布任务添加监听
 gulp.task('default', () => { 

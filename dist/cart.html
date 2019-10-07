@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>购物车</title>
     <link rel="stylesheet" href="css/cart.min.css">
+    <link rel="stylesheet" href="font/iconfont.css">
 </head>
 <body>
     <div id="header_cart">
@@ -42,12 +43,91 @@
                 <i></i>
             </div>
             <div class="title_info">
-                <input class="title_input" type="checkbox">
+                <input class="title_input" type="checkbox"> 
                 <p>美鲜自营</p>
                 <span>
                     领取优惠价
-                    <i></i>
+                    <i class="iconfont icon-xiajiantou
+                    "></i>
                 </span>
+            </div>
+            <div class="self_sum">
+                <span>
+                    已选:
+                    <i>￥</i>
+                    <s>980</s>
+                </span>
+            </div>
+            <!-- 结算 -->
+            <div class="self_play">
+                <ul>
+                    <li class="go_cath1" >
+                        <input type="checkbox">
+                        <span>全选</span>
+                    </li>
+                    <li class="go_cath2">
+                        <a class="del_self_play" href="javascript:;">删除选中商品</a>
+                    </li>
+                    <li class="go_cath3">
+                        <a class="add_self_play" href="javascript:;">选中加入收藏夹</a>
+                    </li>
+                    <li class="go_cath6">
+                        <input type="submit" value="去结算">
+                    </li>
+                    <li class="go_cath5">
+                        合计(不含运费)：
+                        <span class="sum_red_span">
+                            ￥
+                            <span class="all_pay_for">678</span>
+                        </span>
+
+                    </li>
+                    <li class="go_cath4">
+                        已选：
+                        <span class="sum_red_span">1</span>
+                        件商品
+                    </li>
+
+                </ul>
+            </div>
+            <!-- 继续购买 -->
+            <div class="buy_again">
+                <a href="index.html">还没买完，继续购物</a>
+            </div>
+
+            <!-- 切换 -->
+            <div class="tab_bottom">
+                <ul class="clear_fix">
+                    <li>
+                        <a class="bottom_tab1" href="javascript:;">我关注的商品</a>
+                    </li>
+                    <li>
+                        <a class="bottom_tab2" href="javascript:;">最近浏览</a>
+                    </li>
+                </ul>
+        </div>
+                <div class="tab_content_list">
+                    <div class="tab_left_button"> 《 </div>
+                    <div class="tab_right_button"> 》 </div>
+                    <!-- 内容 -->
+                    <div class="good_focus_list">
+                        <ul class="clear_fix ONE">
+                            <li>
+                                <a href="particulars.html">
+                                    <img src="./img/cart/img/shiping.min.jpg" alt="">
+                                </a>
+                                <p>达伟 速冻青皮蚕豆（青蚕） 0.5kg/袋 10袋/箱</p>
+                                <span>
+                                    ￥64.2
+                                    <i> / 件</i>
+
+                                </span>
+                                <a href="JavaScript:;">加入购物车</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="good_look_list"></div>
+                </div>
             </div>
         </div>
     </div>
