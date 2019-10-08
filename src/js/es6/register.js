@@ -3,7 +3,8 @@ $('.user_phone').blur(function () {
     let str = $('.user_phone').val();
     let re = /^1[5|8][6|8]\d{8}/;
     if (!re.test(str)) {
-        alert('请输入正确的手机号 156 158 188');
+        Dialogify.alert('<i style="color:green;margin-left:50px;">请输入正确的手机号 156 158 188<i>');
+        
     }
 })
 
@@ -14,7 +15,8 @@ $('.YZM_value').blur(function () {
         console.log(YZM_img);
     } else {
         console.log(YZM_img);
-        alert('请输入正确的验证码');
+        Dialogify.alert('<i style="color:green;margin-left:50px;">请输入正确的验证码<i>');
+        return;
     }
 })
 // 生成验证码
@@ -92,29 +94,41 @@ $('.pwd').blur(function () {
         return;
     }
 });
-
+  
 // 再次输入密码
 $('.rea_pwd_value').blur(function () {
     console.log($('.rea_pwd_value').val());
     let rea_num = $('.rea_pwd_value').val();
     let pwd_num = $('.pwd').val();
     console.log($('.pwd').val());
-    if (rea_num == pwd_num) {
+   if (rea_num == pwd_num) {
+      
+    $('.btn').removeClass('disable');
+
        
     } else {
-        $('.pwd_title').text('密码输入错误');
+       $('.pwd_title').text('密码输入错误');
+         $('.btn').addClass('disable');
         $('.rea_pwd_value').focus(function () {
             $('.pwd_title').text('');
-            return;
-        })
-        
+        }) 
+       return;
+      
     }
 
 })
 
 
+
+
+
+
+
+
+
+
 // 判断是否点击用户协议
- let count = $('.check_value').val(); 1
+ let count = $('.check_value').val(); 
 $('.check_value').click(function () { 
     count ++;
    
@@ -124,20 +138,25 @@ $('.check_value').click(function () {
 
 // 点击登录
 $('.btn').click(function () { 
+   
     
     if (count % 2 == 1) {
-        alert('请阅读用户协议');
+        Dialogify.alert('<i style="color:green;margin-left:100px;">请阅读用户协议<i>');
+     
         return;
-    } else {
+    }
+     else {
 
 
 
-    
+     
         let user = $('.user_phone').val();
         let pwd = $('.rea_pwd_value').val();
 
         if (!user && !pwd) {
-            alert('手机号密码不能为空');
+        Dialogify.alert('<i style="color:green;margin-left:50px;">手机号密码不能为空<i>');
+
+      
             return;
         }
 
@@ -146,7 +165,9 @@ $('.btn').click(function () {
 
         if (user in cookieObj) {
             console.log(user);
-            alert('用户名已存在');
+        Dialogify.alert('<i style="color:green;margin-left:90px;">用户名已存在<i>');
+
+       
             return;
         } else {
             // 创建cookie
@@ -157,7 +178,8 @@ $('.btn').click(function () {
                 expires: 7,
                 path : '/'
             })
-        alert('注册成功');
+            Dialogify.alert('<i style="color:green;margin-left:100px;">注册成功<i>');
+        // location.href = "login.html";
         }
 
 

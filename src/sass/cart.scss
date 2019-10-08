@@ -140,6 +140,45 @@
                 }
             }
         }
+
+// 插入购物车
+.insert_buy_cart{
+    width: 1200px;
+    font-size: 12px;
+    color: #333333;
+    margin: 0 auto;
+    .checkbox{
+        width: 12px;
+        height: 12px;
+        border: 1px solid #999999;
+        margin-left: 22px;
+        margin-right: 5px;
+        float: left;
+    }
+    .insert_cart_img{
+        width: 98px;
+        height: 140px;
+        background: pink;
+        float: left;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         .self_sum{
             width: 1200px;
             height: 60px;
@@ -261,7 +300,7 @@
             }
         }
         // 切换
-        .tab_bottom{0
+        .tab_bottom{
             width: 1200px;
             margin: 0 auto;
             background: #fff;
@@ -296,9 +335,12 @@
                         display: block;
                         border-right: 1px solid #EEEEEE;
                         cursor: pointer;
+                        
                     }
                 }
             }
+        }
+        // 列表
             .tab_content_list{
                 width: 1200px;
                 height: 279px;
@@ -323,6 +365,7 @@
                     float: left;
                     display: block;
                 }
+                // 列表
                 .good_focus_list{
                     width: 1155px;
                     overflow: hidden;
@@ -356,16 +399,146 @@
                                 color: #666666;
                                 line-height: 18px;
                             }
+                            span{
+                                   width: 144px;                     
+                                height: 26px;
+                                display: block;
+                                margin: 0 auto;
+                                line-height: 26px;
+                                font-size: 18px;
+                                color: #E4462C;
+                            }
+                            a{
+                                width: 88px;
+                               
+                                display: block;
+                                margin-left: 35px;
+                                margin-top: 5px;
+                                background: #ccc;
+                                
+                                font-size: 12px;
+                                color: #666666;
+                                line-height: 24px;
+                                text-align: center;
+                            }
                         }
                     }
                 }
-                .good_look_list{
-                    width: 1155px;
-                    overflow: hidden;
-                    padding-left: 40px;
+
+                // good_look_list
+                // .good_look_list{
+                //     width: 1155px;
+                //     overflow: hidden;
+                //     padding-left: 40px;
+                 
+
+                // }
+
+
+            }
+
+
+
+
+        // Lie表
+
+        .tab2_content_list{
+            width: 1200px;
+            height: 279px;
+            background-color: #fff;
+            border-top: none;
+            overflow: hidden;
+            .tab_left_button{
+                position: relative;
+                top: 155px;
+                left: 13px;
+                width: 14px;
+                height: 20px;
+                float: left;
+                display: block;
+            }
+            .tab_right_button{
+                position: relative;
+                top: 148px;
+                left: 1150px;
+                width: 14px;
+                height: 20px;
+                float: left;
+                display: block;
+            }
+            // 列表
+            .good_focus_list{
+                width: 1155px;
+                overflow: hidden;
+                padding-left: 40px;
+                .ONE{
+
+                    li{
+                        width: 220px;
+                        height: 279px;
+                        float: left;
+                        a{
+                            img{
+                                width: 140px;
+                                height: 140px;
+                                display: block;
+                                margin: 0 auto;
+                                margin-top: 10px;
+                                margin-bottom: 10px;
+                            
+                            }
+                        }
+                        p{
+                            width: 144px;
+                            height: 35px;
+                            display: block;
+                            margin: 0 auto;
+                            margin-bottom: 5px;
+                            overflow: hidden;
+                          
+                            font-size: 12px;
+                            color: #666666;
+                            line-height: 18px;
+                        }
+                        span{
+                               width: 144px;                     
+                            height: 26px;
+                            display: block;
+                            margin: 0 auto;
+                            line-height: 26px;
+                            font-size: 18px;
+                            color: #E4462C;
+                        }
+                        a{
+                            width: 88px;
+                           
+                            display: block;
+                            margin-left: 35px;
+                            margin-top: 5px;
+                            background: #ccc;
+                            
+                            font-size: 12px;
+                            color: #666666;
+                            line-height: 24px;
+                            text-align: center;
+                        }
+                    }
                 }
             }
+
+            // good_look_list
+            // .good_look_list{
+            //     width: 1155px;
+            //     overflow: hidden;
+            //     padding-left: 40px;
+             
+
+            // }
+
+
+        }
+
+        // 列表
         }
 
     }
-}

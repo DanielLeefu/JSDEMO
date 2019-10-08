@@ -7,6 +7,8 @@
     <title>购物车</title>
     <link rel="stylesheet" href="css/cart.min.css">
     <link rel="stylesheet" href="font/iconfont.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.cookie.min.js"></script>
 </head>
 <body>
     <div id="header_cart">
@@ -25,7 +27,7 @@
             <tbody>
                 <tr>
                     <td width="320">
-                        <input class="all_choice" type="checkbox"> 全选
+                        <input class="all_choice" type="checkbox" checked> 全选
                     </td>
                     <td width="320">商品</td>
                     <td width="120">单位</td>
@@ -51,6 +53,35 @@
                     "></i>
                 </span>
             </div>
+
+            <!-- 插入的购物车 -->
+            <div class="insert_buy_cart">
+                <input type="checkbox" checkbox>
+                <!-- img -->
+                <div class="insert_cart_img"></div>
+                <!-- name -->
+                <div class="insert_cart_name"></div>
+                <!-- 有效期 -->
+                <div class="insert_cart_data"></div>
+                <!-- 件 -->
+                <div class="insert_cart_num"></div>
+                <!-- 价格 -->
+                <div class="insert_cart_price"></div>
+                <!-- 数量 -->
+                <div class="insert_cart_number"></div>
+                <!-- 总金额 -->
+                <div class="insert_cart_allPrice"></div>
+                <!-- 操作 -->
+                <div class="insert_cart_set"></div>
+
+            </div>
+
+
+
+
+
+
+
             <div class="self_sum">
                 <span>
                     已选:
@@ -106,6 +137,8 @@
                     </li>
                 </ul>
         </div>
+
+        <!-- 列表 -->
                 <div class="tab_content_list">
                     <div class="tab_left_button"> 《 </div>
                     <div class="tab_right_button"> 》 </div>
@@ -124,12 +157,74 @@
                                 </span>
                                 <a href="JavaScript:;">加入购物车</a>
                             </li>
+                            <li>
+                                    <a href="particulars.html">
+                                        <img src="./img/cart/img/shiping.min.jpg" alt="">
+                                    </a>
+                                    <p>达伟 速冻青皮蚕豆（青蚕） 0.5kg/袋 10袋/箱</p>
+                                    <span>
+                                        ￥64.2
+                                        <i> / 件</i>
+    
+                                    </span>
+                                    <a href="JavaScript:;">加入购物车</a>
+                                </li>
                         </ul>
                     </div>
-                    <div class="good_look_list"></div>
                 </div>
-            </div>
+<!-- 列表 -->
+
+<div class="tab2_content_list">
+        <div class="tab_left_button"> 《 </div>
+        <div class="tab_right_button"> 》 </div>
+        <!-- 内容 -->
+        <div class="good_focus_list">
+            <ul class="clear_fix ONE">
+                <li>
+                    <a href="particulars.html">
+                        <img src="./img/cart/img/shiping.min.jpg" alt="">
+                    </a>
+                    <p>达伟 速冻青皮蚕豆（青蚕） 0.5kg/袋 10袋/箱</p>
+                    <span>
+                        ￥64.2
+                        <i> / 件</i>
+
+                    </span>
+                    <a href="JavaScript:;">加入购物车</a>
+                </li>
+                <li>
+                        <a href="particulars.html">
+                            <img src="./img/cart/img/shiping.min.jpg" alt="">
+                        </a>
+                        <p>达伟 速冻青皮蚕豆（青蚕） 0.5kg/袋 10袋/箱</p>
+                        <span>
+                            ￥64.2
+                            <i> / 件</i>
+
+                        </span>
+                        <a href="JavaScript:;">加入购物车</a>
+                    </li>
+            </ul>
         </div>
     </div>
+
+<!-- 列表 -->
+            </div>
+        </div>
+
+
+
+<!-- 公共尾页 -->
+ <!-- 加载公共尾部 -->
+ <div id="publicFooter">
+       
+    </div>
+    <script type="text/javascript">
+      
+        $('#publicFooter').load('publicFooter.html');
+
+    </script>
+    <script src="js/cart.min.js"></script>
+    
 </body>
 </html>

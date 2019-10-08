@@ -58,7 +58,7 @@ $('.ver_val').blur(function () {
     let ver_num = $('.ver_num').text();
     if ($(this).val() === ver_num) {    
     } else {
-        alert('请输入正确的验证码');
+        Dialogify.alert('请输入正确的验证码');
         return;
     }
 })
@@ -74,14 +74,20 @@ $('.forgeter').click(function () {
     location.href = 'register.html';
 })
 
+// 判断是否点了记住我（七天免登录）
+  let count = 0;
+$('#remember').click(function () { count++; return count; })
+console.log(count);
+    
 // 获取登陆按钮
 $('.button').click(function () { 
-
+  
     let user = $('.user').val();
     let pwd = $('.pwd').val();
     let ver_val = $('.ver_val').val();
     if (!user && !pwd && !ver_val) { 
-        alert('用户名和密码和验证码不能为空');
+        Dialogify.alert('用户名和密码和验证码不能为空');
+       
         return;
     }
 
@@ -90,34 +96,36 @@ $('.button').click(function () {
     if (user in cookieObj) {
         if (cookieObj[user] === pwd) {
 
-            // 记住我(选中了为基数)
-                // let count = 0;
-                // $('#remember').click(function () {
-                //     count++;
-                //     console.log(count);
-                //     if (count % 2 === 1) { 
-                //         //    创建cookie
-                //         let cookieObj = {
-                //             user: $('.user').val(),
-                //             pwd : $('.pwd').val()
-                //         }
-                //         $.cookie('loginMsg', JSON.stringify(cookieObj), {
-                //             expires: 7,
-                //             path : '/'
-
-                //         })
-
-                //     }
-                // })
+            // 如果点击了记住我，就创建七天免登录cookie
+                    if (count % 2 === 1) { 
+                        //    创建cookie
+                        let cookieObj = {
+                            user: $('.user').val(),
+                            pwd : $('.pwd').val()
+                        }
+                        $.cookie('loginMsg', JSON.stringify(cookieObj), {
+                            expires: 7,
+                            path : '/'
+                        })
+                    }
+              
+            
+            // 登录成功放置用户名到页面，设置cookie存储
+            let H_name = $('.user').val();
+            $.cookie('headerName',null,{
+                expires: -1
+            });
+            $.cookie('headerName',H_name);
+            
             
             location.href = 'index.html';
             return;
         } else {
-            alert('密码错误');
+            Dialogify.alert('密码错误');     
             return;
         }
     } else { 
-        alert('用户名不存在');
+        Dialogify.alert('用户名不存在');
         return;
     }
 
@@ -186,7 +194,7 @@ $('.user_phone').blur = function () {
     let str = $('.user_phone').val(); 
     let re = /0?(13|14|15|18|17)[0-9]{9}/;
     if (!re.test(str)) { 
-        alert('请输入正确的手机号');
+        Dialogify.alert('请输入正确的手机号');
         return;
     }
 }
@@ -196,7 +204,7 @@ $('.vel_value_phone').blur(function () {
     let ver_num = $('.vel_num_phone').text(); 
     if ($(this).val() === ver_num) {    
     } else {
-        alert('请输入正确的验证码');
+        Dialogify.alert('请输入正确的验证码');
         return;
     }
 })
@@ -223,7 +231,8 @@ $('.button2').click(function () {
     let user = $('.user_phone').val();
     let ver_val = $('.vel_value_phone').val();
     if (!user && !ver_val) { 
-        alert('用户名验证码不能为空');
+        Dialogify.alert('用户名验证码不能为空');
+
         return;
     }
 
@@ -233,5 +242,8 @@ $('.button2').click(function () {
     let cookieObj = cookieStrToObj(cookieStr);
     if (user in cookieObj) {
         location.href = 'index.html';
+    } else {
+        Dialogify.alert('用户名不存在');
+        
     }
 })

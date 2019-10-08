@@ -337,7 +337,10 @@
         background: green;
         color: #fff;
         text-align: center;
-        
+       
+    }
+    .disable{
+         pointer-events: none;
     }
 }
 

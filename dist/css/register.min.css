@@ -422,6 +422,10 @@ input {
   text-align: center;
 }
 
+#list .list_register .user_btn .disable {
+  pointer-events: none;
+}
+
 #list .list_images {
   width: 378px;
   float: right;

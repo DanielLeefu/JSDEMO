@@ -220,6 +220,29 @@ input {
   font-size: 12px;
 }
 
+.banner_cart .shopping_self .insert_buy_cart {
+  width: 1200px;
+  font-size: 12px;
+  color: #333333;
+  margin: 0 auto;
+}
+
+.banner_cart .shopping_self .insert_buy_cart .checkbox {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #999999;
+  margin-left: 22px;
+  margin-right: 5px;
+  float: left;
+}
+
+.banner_cart .shopping_self .insert_buy_cart .insert_cart_img {
+  width: 98px;
+  height: 140px;
+  background: pink;
+  float: left;
+}
+
 .banner_cart .shopping_self .self_sum {
   width: 1200px;
   height: 60px;
@@ -394,7 +417,7 @@ input {
   cursor: pointer;
 }
 
-.banner_cart .shopping_self .tab_bottom .tab_content_list {
+.banner_cart .shopping_self .tab_content_list {
   width: 1200px;
   height: 279px;
   background-color: #fff;
@@ -402,7 +425,7 @@ input {
   overflow: hidden;
 }
 
-.banner_cart .shopping_self .tab_bottom .tab_content_list .tab_left_button {
+.banner_cart .shopping_self .tab_content_list .tab_left_button {
   position: relative;
   top: 155px;
   left: 13px;
@@ -412,7 +435,7 @@ input {
   display: block;
 }
 
-.banner_cart .shopping_self .tab_bottom .tab_content_list .tab_right_button {
+.banner_cart .shopping_self .tab_content_list .tab_right_button {
   position: relative;
   top: 148px;
   left: 1150px;
@@ -422,19 +445,19 @@ input {
   display: block;
 }
 
-.banner_cart .shopping_self .tab_bottom .tab_content_list .good_focus_list {
+.banner_cart .shopping_self .tab_content_list .good_focus_list {
   width: 1155px;
   overflow: hidden;
   padding-left: 40px;
 }
 
-.banner_cart .shopping_self .tab_bottom .tab_content_list .good_focus_list .ONE li {
+.banner_cart .shopping_self .tab_content_list .good_focus_list .ONE li {
   width: 220px;
   height: 279px;
   float: left;
 }
 
-.banner_cart .shopping_self .tab_bottom .tab_content_list .good_focus_list .ONE li a img {
+.banner_cart .shopping_self .tab_content_list .good_focus_list .ONE li a img {
   width: 140px;
   height: 140px;
   display: block;
@@ -443,7 +466,7 @@ input {
   margin-bottom: 10px;
 }
 
-.banner_cart .shopping_self .tab_bottom .tab_content_list .good_focus_list .ONE li p {
+.banner_cart .shopping_self .tab_content_list .good_focus_list .ONE li p {
   width: 144px;
   height: 35px;
   display: block;
@@ -455,8 +478,107 @@ input {
   line-height: 18px;
 }
 
-.banner_cart .shopping_self .tab_bottom .tab_content_list .good_look_list {
+.banner_cart .shopping_self .tab_content_list .good_focus_list .ONE li span {
+  width: 144px;
+  height: 26px;
+  display: block;
+  margin: 0 auto;
+  line-height: 26px;
+  font-size: 18px;
+  color: #E4462C;
+}
+
+.banner_cart .shopping_self .tab_content_list .good_focus_list .ONE li a {
+  width: 88px;
+  display: block;
+  margin-left: 35px;
+  margin-top: 5px;
+  background: #ccc;
+  font-size: 12px;
+  color: #666666;
+  line-height: 24px;
+  text-align: center;
+}
+
+.banner_cart .shopping_self .tab2_content_list {
+  width: 1200px;
+  height: 279px;
+  background-color: #fff;
+  border-top: none;
+  overflow: hidden;
+}
+
+.banner_cart .shopping_self .tab2_content_list .tab_left_button {
+  position: relative;
+  top: 155px;
+  left: 13px;
+  width: 14px;
+  height: 20px;
+  float: left;
+  display: block;
+}
+
+.banner_cart .shopping_self .tab2_content_list .tab_right_button {
+  position: relative;
+  top: 148px;
+  left: 1150px;
+  width: 14px;
+  height: 20px;
+  float: left;
+  display: block;
+}
+
+.banner_cart .shopping_self .tab2_content_list .good_focus_list {
   width: 1155px;
   overflow: hidden;
   padding-left: 40px;
+}
+
+.banner_cart .shopping_self .tab2_content_list .good_focus_list .ONE li {
+  width: 220px;
+  height: 279px;
+  float: left;
+}
+
+.banner_cart .shopping_self .tab2_content_list .good_focus_list .ONE li a img {
+  width: 140px;
+  height: 140px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.banner_cart .shopping_self .tab2_content_list .good_focus_list .ONE li p {
+  width: 144px;
+  height: 35px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  overflow: hidden;
+  font-size: 12px;
+  color: #666666;
+  line-height: 18px;
+}
+
+.banner_cart .shopping_self .tab2_content_list .good_focus_list .ONE li span {
+  width: 144px;
+  height: 26px;
+  display: block;
+  margin: 0 auto;
+  line-height: 26px;
+  font-size: 18px;
+  color: #E4462C;
+}
+
+.banner_cart .shopping_self .tab2_content_list .good_focus_list .ONE li a {
+  width: 88px;
+  display: block;
+  margin-left: 35px;
+  margin-top: 5px;
+  background: #ccc;
+  font-size: 12px;
+  color: #666666;
+  line-height: 24px;
+  text-align: center;
 }

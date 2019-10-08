@@ -1,1 +1,86 @@
 @import 'public';
+#middle{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    .middle_col{
+        width: 960px;
+        margin-left: 239px;
+        display: inline-block;
+        overflow: hidden;
+        .lun_bo{
+            width: 960px;
+            height: 489px;
+            overflow: hidden; 
+            position: relative;
+            display: block;
+            background: pink;
+            ul{
+                height: 489px;
+                position: absolute;
+                width: 4800px;
+
+                li{
+                    float: left;
+                    width: 960px;
+                    height: 489px;
+                    position: relative;
+                }
+            }
+            .lunbo_btn{
+                z-index: 2;
+                width: 960px;
+                height: 60px;
+                background: green;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding:5px;
+                li{
+                    float: left;
+                    text-align: center;
+                    width: 153px;
+                    height:40px;
+                    line-height:40px;
+                    background: red;
+                    color: #fff;
+                    opacity: 0.5;
+                    margin: 5px 10px; 
+                    margin-top: 10px;
+                }
+                .active{
+                    height: 50px;
+                    opacity: 1;
+                    color: blue;
+                }
+                .li1{
+                    margin-left: 50px;
+                }
+            }  
+            .It_left{
+                    width: 60px;
+                    height: 60px;
+                    color: #fff;
+                    font-size: 50px;
+                    line-height: 60px;
+                    font-weight: bold;
+                    position: absolute;
+                    left: 0;
+                    top: 40%;
+                    z-index: 3;
+            }   
+            .It_right{
+                width: 60px;
+                height: 60px;
+                color: #fff;
+                font-size: 50px;
+                line-height: 60px;
+                font-weight: bold;
+                position: absolute;
+                right: 0;
+                top: 40%;
+                z-index: 3;
+            }      
+        }
+    }
+}

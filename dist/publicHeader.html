@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/publicHeader.min.css">
     <link rel="stylesheet" href="font/iconfont.css">
+    
   
 </head>
 
@@ -21,10 +22,14 @@
             <!-- left -->
             <ul class="top_list_l fl">
                 <li class="list_l_01 fl">
+                       <a class="U_name" href="javascript:;"></a>
+
                     <a href="javascript:;">欢迎光临美鲜冻品商城</a>
+                 
                 </li>
                 <li class="list_l_02 fr">
-                    <a href="login.html">登录</a>
+                    <a class="login_con" href="login.html">登录</a>
+                    <a class="del_con" href="JavaScript:;"></a>
                     <span>|</span>
                     <a href="register.html">注册</a>
                 </li>
@@ -36,7 +41,7 @@
                     <span class="iconfont icon-xiajiantou"></span>
                     <!-- 点击下拉菜单 -->
                     <ul class="drop_down_li">
-                        <li><a href="#">我的订单</a></li>
+                        <li><a href="particulars.html">我的订单</a></li>
                         <li><a href="#">用户信息</a></li>
                         <li><a href="#">收获地址</a></li>
                         <li><a href="#">我的红包</a></li>
@@ -45,7 +50,7 @@
                 </li>
                 <li class="item_04 fl">
 
-                    <a href="#">
+                    <a href="particulars.html">
                         <span class="iconfont icon-gouwuche"></span>
                         我的购物车
                         <i class="num public_buy_num"></i>
@@ -1025,6 +1030,31 @@
     <!-- 下面是正文了 -->
    
 <script>
+
+// 将登录用户名放到页面上
+set_name();
+function set_name(){
+    let H_name = $.cookie('headerName');
+    if(H_name === undefined){
+        $('.U_name').text('');
+    }else{
+    $('.U_name').text(H_name+',您好');
+    $('.login_con').text('');
+    $('.del_con').text('退出');
+}}
+
+$('.del_con').click(function(){
+    $.cookie('headerName',null,{
+        expires: -1
+    });
+    $('.U_name').text('');
+    $('.login_con').text('登录');
+    $('.del_con').text('');
+})
+
+
+
+
     // 初始化购物车的cookie
     init1();
 function init1() { 
@@ -1040,7 +1070,10 @@ function init1() {
     $('.public_buy_num').text(`${sum}`);
 
 
-}
+};
+
+// 获取cookie放到登录上去
+
 
 
 </script>
