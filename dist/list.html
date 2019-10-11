@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/list.min.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.cookie.min.js"></script>
+    
+</head>
+<body>
+    <!-- 右边栏 -->
+ <div class="right_quick">
+        <div class="quick_links">
+            <ul>
+                <li class="quick_cark">
+                    <a class="click_buy" href="javascript:;">
+                        <i class="iconfont icon-gouwuche"></i>
+                        <div>购物车</div>
+                        <span class="cart_num"></span>
+                    </a>
+                </li>
+                <li class="quick_qq">
+                    <a href="javascript:;">
+                        <i class="iconfont icon-qq"></i>
+                    </a>
+                    <div>客服QQ，点击交谈</div>
+                </li>
+                <li class="quick_phone">
+                        <a href="javascript:;">
+                            <i class="iconfont icon-weibiaoti-"></i>
+                        </a>
+                        <div>客服电话：4006-728-726</div>
+                </li>
+                <li class="quick_ma">
+                        <a href="javascript:;">
+                            <i class="iconfont icon-saoyisao"></i>
+                        </a>
+                        <div><img src="img/particulars/img/code.min.png" alt=""></div>
+                </li>
+                <li class="quick_top">
+                        <a href="#publicHeader">
+                            <i class="iconfont icon-qq"></i>
+                        </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- gouwuche -->
+    <div class="right_quick_buy">
+         <div class="wrap_top">
+             <i></i>
+             <s>美鲜自营</s>
+             <span>济南仓</span>
+         </div>
+         <div class="wrap_top_clear"></div>
+         <ul class="right_quick_list">
+
+         </ul>
+
+         <!-- <ul class="right_quick_list">
+                <li>
+                    <div class="list_cart_img">
+                        <a href="particulars.html">
+                            <img src="img/particulars/img/particulars_img2.min.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="list_cart_msg">
+                       <p>Murray Goulburn MG马苏里拉芝士 顶级芝士 10kg/块 2块/箱 (单块)</p> 
+                       <span>
+                            <em>515</em>
+                            <i>*5</i>
+                       </span>
+                       <a href="javascript:;">删除</a>
+                    </div>
+                </li>
+             </ul> -->
+
+        <div class="wrap_bottom">
+            <div class="wrap_bottom_left">
+                共
+                <span class="buy_num_span"></span>
+                件商品   &nbsp;&nbsp;共计
+                <span class="buy_num_all"></span>
+            </div>
+            <div class="wrap_bottom_right">
+                <a href="cart.html">去购物车</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 加载公共头部 -->
+    <div id="publicHeader">
+        <!-- 444 -->
+      
+    </div>
+
+    <div id="listMiddle" class="clear_fix">
+        <div class="cw_left fl">
+            <div class="search_banner">
+                <a href="404.html">
+                    <img src="img/list/img/list_banner.min.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="search_control clear_fix">
+                <span>相关分类</span>
+                <ul class="clear_fix">
+                    <li>
+                        <a href="#">冷冻肉产品</a>
+                    </li>
+                    <li>
+                        <a href="#">冷冻禽类</a>
+                    </li>
+                    <li>
+                        <a href="#">肉制品</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="search_control_nav clear_fix">
+                <span>品牌</span>
+                <ul class="ul_li">
+                    <li>
+                        <a href="#" class="all">全部</a>
+                    </li>
+                    <li>
+                        <a href="#">六合</a>
+                    </li>
+                    <li>
+                        <a href="#">正大</a>
+                    </li>
+                    <li>
+                        <a href="#">双汇</a>
+                    </li>
+                    <li>
+                        <a href="#">安静</a>
+                    </li>
+                    <li>
+                        <a href="#">达成</a>
+                    </li>
+                    <li>
+                        <a href="#">赫尔曼</a>
+                    </li>
+                    <li>
+                        <a href="#">大成</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="list_content">
+                <div class="Ic_title clear_fix">
+                    <div class="Ic_title_left clear_fix">
+                        <span>
+                            <a href="javascript:;">综合排序</a>
+                        </span>
+                        <span>
+                            <a href="javascript:;">人气</a>
+                        </span>
+                        <span>
+                            <a href="javascript:;">价格</a>
+                        </span>
+                    </div>
+                    <div class="Ic_title_right clear_fix">
+                       <p>
+                        <s>共</s>
+                        <span>27</span>
+                        <s>款商品</s>
+                        <span>1/1</span>
+                       </p>
+                       <div class="page_total">
+                           <span>
+                               <
+                           </span>
+                           <span>
+                               >
+                           </span>
+                       </div> 
+                    </div>
+
+                </div>
+
+        <div class="list_content_item clear_fix">
+            <ul>
+                <li class="li_border">
+                    <div class="img">
+                        <a href="particulars.html"><img src="img/list/img/list01.min.jpg" alt="">
+                        </a>
+                        <div class="dis_div">
+                            <i class=" iconfont icon-caidan i1"></i>
+                            <span class="sp1">肉禽蛋品</span>
+                           <i class=" iconfont icon-caidan i2"></i> 
+                            <span class="sp2">冷冻肉产品</span>
+                        </div>
+                    </div> 
+                    <span class="good_price">￥458.00元</span>
+                    <div class="warp_name">
+                        <p>六和 六和冻鸡 70/80去皮腿肉 去骨鸡腿肉70-80 1.875kg/袋 6袋/箱</p>
+                        <span class="from_title">
+                            <i></i>
+                            <s>美鲜自营</s>
+                        </span>
+                    </div>
+                </li> 
+               
+                <li class="li_border">
+                        <div class="img">
+                            <a href="particulars.html"><img src="img/list/img/list01.min.jpg" alt="">
+                            </a>
+                            <div class="dis_div">
+                                <i class=" iconfont icon-caidan i1"></i>
+                                <span class="sp1">肉禽蛋品</span>
+                               <i class=" iconfont icon-caidan i2"></i> 
+                                <span class="sp2">冷冻肉产品</span>
+                            </div>
+                        </div> 
+                        <span class="good_price">￥458.00元</span>
+                        <div class="warp_name">
+                            <p>六和 六和冻鸡 70/80去皮腿肉 去骨鸡腿肉70-80 1.875kg/袋 6袋/箱</p>
+                            <span class="from_title">
+                                <i></i>
+                                <s>美鲜自营</s>
+                            </span>
+                        </div>
+                    </li> 
+
+                    <li class="li_border">
+                            <div class="img">
+                                <a href="particulars.html"><img src="img/list/img/list01.min.jpg" alt="">
+                                </a>
+                                <div class="dis_div">
+                                    <i class=" iconfont icon-caidan i1"></i>
+                                    <span class="sp1">肉禽蛋品</span>
+                                   <i class=" iconfont icon-caidan i2"></i> 
+                                    <span class="sp2">冷冻肉产品</span>
+                                </div>
+                            </div> 
+                            <span class="good_price">￥458.00元</span>
+                            <div class="warp_name">
+                                <p>六和 六和冻鸡 70/80去皮腿肉 去骨鸡腿肉70-80 1.875kg/袋 6袋/箱</p>
+                                <span class="from_title">
+                                    <i></i>
+                                    <s>美鲜自营</s>
+                                </span>
+                            </div>
+                        </li> 
+                       
+    <li class="li_border">
+            <div class="img">
+                <a href="particulars.html"><img src="img/list/img/list01.min.jpg" alt="">
+                </a>
+                <div class="dis_div">
+                    <i class=" iconfont icon-caidan i1"></i>
+                    <span class="sp1">肉禽蛋品</span>
+                    <i class=" iconfont icon-caidan i2"></i> 
+                    <span class="sp2">冷冻肉产品</span>
+                </div>
+            </div> 
+            <span class="good_price">￥458.00元</span>
+            <div class="warp_name">
+                <p>六和 六和冻鸡 70/80去皮腿肉 去骨鸡腿肉70-80 1.875kg/袋 6袋/箱</p>
+                <span class="from_title">
+                    <i></i>
+                    <s>美鲜自营</s>
+                </span>
+            </div>
+        </li> 
+        <li class="li_border">
+                <div class="img">
+                    <a href="particulars.html"><img src="img/list/img/list01.min.jpg" alt="">
+                    </a>
+                    <div class="dis_div">
+                        <i class=" iconfont icon-caidan i1"></i>
+                        <span class="sp1">肉禽蛋品</span>
+                        <i class=" iconfont icon-caidan i2"></i> 
+                        <span class="sp2">冷冻肉产品</span>
+                    </div>
+                </div> 
+                <span class="good_price">￥458.00元</span>
+                <div class="warp_name">
+                    <p>六和 六和冻鸡 70/80去皮腿肉 去骨鸡腿肉70-80 1.875kg/袋 6袋/箱</p>
+                    <span class="from_title">
+                        <i></i>
+                        <s>美鲜自营</s>
+                    </span>
+                </div>
+            </li> 
+            
+            <li class="li_border">
+                    <div class="img">
+                        <a href="particulars.html"><img src="img/list/img/list01.min.jpg" alt="">
+                        </a>
+                        <div class="dis_div">
+                            <i class=" iconfont icon-caidan i1"></i>
+                            <span class="sp1">肉禽蛋品</span>
+                            <i class=" iconfont icon-caidan i2"></i> 
+                            <span class="sp2">冷冻肉产品</span>
+                        </div>
+                    </div> 
+                    <span class="good_price">￥458.00元</span>
+                    <div class="warp_name">
+                        <p>六和 六和冻鸡 70/80去皮腿肉 去骨鸡腿肉70-80 1.875kg/袋 6袋/箱</p>
+                        <span class="from_title">
+                            <i></i>
+                            <s>美鲜自营</s>
+                        </span>
+                    </div>
+                </li> 
+
+<li class="li_border">
+        <div class="img">
+            <a href="particulars.html"><img src="img/list/img/list01.min.jpg" alt="">
+            </a>
+            <div class="dis_div">
+                <i class=" iconfont icon-caidan i1"></i>
+                <span class="sp1">肉禽蛋品</span>
+                <i class=" iconfont icon-caidan i2"></i> 
+                <span class="sp2">冷冻肉产品</span>
+            </div>
+        </div> 
+        <span class="good_price">￥458.00元</span>
+        <div class="warp_name">
+            <p>六和 六和冻鸡 70/80去皮腿肉 去骨鸡腿肉70-80 1.875kg/袋 6袋/箱</p>
+            <span class="from_title">
+                <i></i>
+                <s>美鲜自营</s>
+            </span>
+        </div>
+    </li> 
+    
+    <li class="li_border">
+            <div class="img">
+                <a href="particulars.html"><img src="img/list/img/list01.min.jpg" alt="">
+                </a>
+                <div class="dis_div">
+                    <i class=" iconfont icon-caidan i1"></i>
+                    <span class="sp1">肉禽蛋品</span>
+                    <i class=" iconfont icon-caidan i2"></i> 
+                    <span class="sp2">冷冻肉产品</span>
+                </div>
+            </div> 
+            <span class="good_price">￥458.00元</span>
+            <div class="warp_name">
+                <p>六和 六和冻鸡 70/80去皮腿肉 去骨鸡腿肉70-80 1.875kg/袋 6袋/箱</p>
+                <span class="from_title">
+                    <i></i>
+                    <s>美鲜自营</s>
+                </span>
+            </div>
+        </li>                      <li class="li_border">
+                <div class="img">
+                    <a href="particulars.html"><img src="img/list/img/list01.min.jpg" alt="">
+                    </a>
+                    <div class="dis_div">
+                        <i class=" iconfont icon-caidan i1"></i>
+                        <span class="sp1">肉禽蛋品</span>
+                        <i class=" iconfont icon-caidan i2"></i> 
+                        <span class="sp2">冷冻肉产品</span>
+                    </div>
+                </div> 
+                <span class="good_price">￥458.00元</span>
+                <div class="warp_name">
+                    <p>六和 六和冻鸡 70/80去皮腿肉 去骨鸡腿肉70-80 1.875kg/袋 6袋/箱</p>
+                    <span class="from_title">
+                        <i></i>
+                        <s>美鲜自营</s>
+                    </span>
+                </div>
+            </li> 
+            
+            <li class="li_border">
+                    <div class="img">
+                        <a href="particulars.html"><img src="img/list/img/list01.min.jpg" alt="">
+                        </a>
+                        <div class="dis_div">
+                            <i class=" iconfont icon-caidan i1"></i>
+                            <span class="sp1">肉禽蛋品</span>
+                            <i class=" iconfont icon-caidan i2"></i> 
+                            <span class="sp2">冷冻肉产品</span>
+                        </div>
+                    </div> 
+                    <span class="good_price">￥458.00元</span>
+                    <div class="warp_name">
+                        <p>六和 六和冻鸡 70/80去皮腿肉 去骨鸡腿肉70-80 1.875kg/袋 6袋/箱</p>
+                        <span class="from_title">
+                            <i></i>
+                            <s>美鲜自营</s>
+                        </span>
+                    </div>
+                </li> 
+
+                <li class="li_border">
+                        <div class="img">
+                            <a href="particulars.html"><img src="img/list/img/list01.min.jpg" alt="">
+                            </a>
+                            <div class="dis_div">
+                                <i class=" iconfont icon-caidan i1"></i>
+                                <span class="sp1">肉禽蛋品</span>
+                                <i class=" iconfont icon-caidan i2"></i> 
+                                <span class="sp2">冷冻肉产品</span>
+                            </div>
+                        </div> 
+                        <span class="good_price">￥458.00元</span>
+                        <div class="warp_name">
+                            <p>六和 六和冻鸡 70/80去皮腿肉 去骨鸡腿肉70-80 1.875kg/袋 6袋/箱</p>
+                            <span class="from_title">
+                                <i></i>
+                                <s>美鲜自营</s>
+                            </span>
+                        </div>
+                    </li> 
+                    
+<li class="li_border">
+        <div class="img">
+            <a href="particulars.html"><img src="img/list/img/list01.min.jpg" alt="">
+            </a>
+            <div class="dis_div">
+                <i class=" iconfont icon-caidan i1"></i>
+                <span class="sp1">肉禽蛋品</span>
+                <i class=" iconfont icon-caidan i2"></i> 
+                <span class="sp2">冷冻肉产品</span>
+            </div>
+        </div> 
+        <span class="good_price">￥458.00元</span>
+        <div class="warp_name">
+            <p>六和 六和冻鸡 70/80去皮腿肉 去骨鸡腿肉70-80 1.875kg/袋 6袋/箱</p>
+            <span class="from_title">
+                <i></i>
+                <s>美鲜自营</s>
+            </span>
+        </div>
+    </li> 
+    <li class="li_border">
+            <div class="img">
+                <a href="particulars.html"><img src="img/list/img/list01.min.jpg" alt="">
+                </a>
+                <div class="dis_div">
+                    <i class=" iconfont icon-caidan i1"></i>
+                    <span class="sp1">肉禽蛋品</span>
+                    <i class=" iconfont icon-caidan i2"></i> 
+                    <span class="sp2">冷冻肉产品</span>
+                </div>
+            </div> 
+            <span class="good_price">￥458.00元</span>
+            <div class="warp_name">
+                <p>六和 六和冻鸡 70/80去皮腿肉 去骨鸡腿肉70-80 1.875kg/袋 6袋/箱</p>
+                <span class="from_title">
+                    <i></i>
+                    <s>美鲜自营</s>
+                </span>
+            </div>
+        </li> 
+        
+        <li class="li_border">
+                <div class="img">
+                    <a href="particulars.html"><img src="img/list/img/list01.min.jpg" alt="">
+                    </a>
+                    <div class="dis_div">
+                        <i class=" iconfont icon-caidan i1"></i>
+                        <span class="sp1">肉禽蛋品</span>
+                        <i class=" iconfont icon-caidan i2"></i> 
+                        <span class="sp2">冷冻肉产品</span>
+                    </div>
+                </div> 
+                <span class="good_price">￥458.00元</span>
+                <div class="warp_name">
+                    <p>六和 六和冻鸡 70/80去皮腿肉 去骨鸡腿肉70-80 1.875kg/袋 6袋/箱</p>
+                    <span class="from_title">
+                        <i></i>
+                        <s>美鲜自营</s>
+                    </span>
+                </div>
+            </li> 
+
+            <li class="li_border">
+                    <div class="img">
+                        <a href="particulars.html"><img src="img/list/img/list01.min.jpg" alt="">
+                        </a>
+                        <div class="dis_div">
+                            <i class=" iconfont icon-caidan i1"></i>
+                            <span class="sp1">肉禽蛋品</span>
+                            <i class=" iconfont icon-caidan i2"></i> 
+                            <span class="sp2">冷冻肉产品</span>
+                        </div>
+                    </div> 
+                    <span class="good_price">￥458.00元</span>
+                    <div class="warp_name">
+                        <p>六和 六和冻鸡 70/80去皮腿肉 去骨鸡腿肉70-80 1.875kg/袋 6袋/箱</p>
+                        <span class="from_title">
+                            <i></i>
+                            <s>美鲜自营</s>
+                        </span>
+                    </div>
+                </li> 
+                
+                <li class="li_border">
+                        <div class="img">
+                            <a href="particulars.html"><img src="img/list/img/list01.min.jpg" alt="">
+                            </a>
+                            <div class="dis_div">
+                                <i class=" iconfont icon-caidan i1"></i>
+                                <span class="sp1">肉禽蛋品</span>
+                                <i class=" iconfont icon-caidan i2"></i> 
+                                <span class="sp2">冷冻肉产品</span>
+                            </div>
+                        </div> 
+                        <span class="good_price">￥458.00元</span>
+                        <div class="warp_name">
+                            <p>六和 六和冻鸡 70/80去皮腿肉 去骨鸡腿肉70-80 1.875kg/袋 6袋/箱</p>
+                            <span class="from_title">
+                                <i></i>
+                                <s>美鲜自营</s>
+                            </span>
+                        </div>
+                    </li>                
+            </ul>
+        </div>
+    </div>
+        </div>
+
+
+        <!-- 右 -->
+        <div class="cw_right fr">
+            <ul class="peo_like_list">
+                <h4>大家都喜欢</h4>
+                <li>
+                        <a href="list.html">
+                            <img src="img/particulars/img/particulars_img2.min.jpg" alt="">
+                            <p>安佳 安佳马苏里拉芝士碎 拉丝芝士 新西兰进口 12公斤/箱</p>
+                            <span>
+                                ￥495.00元
+                            </span>
+                        </a>
+            </li>
+            <li>
+                    <a href="list.html">
+                        <img src="img/particulars/img/particulars_img2.min.jpg" alt="">
+                        <p>安佳 安佳马苏里拉芝士碎 拉丝芝士 新西兰进口 12公斤/箱</p>
+                        <span>
+                            ￥495.00元
+                        </span>
+                    </a>
+            </li>
+            <li>
+                    <a href="list.html">
+                        <img src="img/particulars/img/particulars_img2.min.jpg" alt="">
+                        <p>安佳 安佳马苏里拉芝士碎 拉丝芝士 新西兰进口 12公斤/箱</p>
+                        <span>
+                            ￥495.00元
+                        </span>
+                    </a>
+            </li>
+            <li>
+                    <a href="list.html">
+                        <img src="img/particulars/img/particulars_img2.min.jpg" alt="">
+                        <p>安佳 安佳马苏里拉芝士碎 拉丝芝士 新西兰进口 12公斤/箱</p>
+                        <span>
+                            ￥495.00元
+                        </span>
+                    </a>
+                </li>
+                <li>
+                        <a href="list.html">
+                            <img src="img/particulars/img/particulars_img2.min.jpg" alt="">
+                            <p>安佳 安佳马苏里拉芝士碎 拉丝芝士 新西兰进口 12公斤/箱</p>
+                            <span>
+                                ￥495.00元
+                            </span>
+                        </a>
+            </li>
+            <li>
+                    <a href="list.html">
+                        <img src="img/particulars/img/particulars_img2.min.jpg" alt="">
+                        <p>安佳 安佳马苏里拉芝士碎 拉丝芝士 新西兰进口 12公斤/箱</p>
+                        <span>
+                            ￥495.00元
+                        </span>
+                    </a>
+            </li>
+            <li>
+                    <a href="list.html">
+                        <img src="img/particulars/img/particulars_img2.min.jpg" alt="">
+                        <p>安佳 安佳马苏里拉芝士碎 拉丝芝士 新西兰进口 12公斤/箱</p>
+                        <span>
+                            ￥495.00元
+                        </span>
+                    </a>
+            </li>
+            <li>
+                    <a href="list.html">
+                        <img src="img/particulars/img/particulars_img2.min.jpg" alt="">
+                        <p>安佳 安佳马苏里拉芝士碎 拉丝芝士 新西兰进口 12公斤/箱</p>
+                        <span>
+                            ￥495.00元
+                        </span>
+                    </a>
+                </li>       
+            </ul>
+        </div>
+    </div>
+
+
+    <div ></div>
+    <!-- 加载公共尾部 -->
+    <div id="publicFooter">
+
+    </div>
+
+    <!-- 引入页面 -->
+    <script type="text/javascript">
+    
+    $('#publicHeader').load('publicHeader.html');
+    $('#publicFooter').load('publicFooter.html');
+    
+    </script>
+    <script src="js/list.min.js"></script>
+</body>
+</html>

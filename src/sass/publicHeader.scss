@@ -10,7 +10,6 @@
 
         width: 1200px;
         height: 30px;
-        background: pink;
         margin:0 auto;
 
         .top_list_l{   
@@ -67,6 +66,7 @@
                 background:#fff;
                 overflow: visible;
                 box-shadow: 0 1px 1px 1px #dddddd; 
+                z-index: 999;
                 li{
                     width: 65px;
                     height: 25px;
@@ -109,11 +109,16 @@
                 font-size: 5px;
             }
             .num{
-                
+                vertical-align: top;
                 font-size: 5px;
                 color: #f5f5f5;                
-                background:orange;
-                border-radius:50%; 
+                // background:orange;
+                // border-radius:50%; 
+                width: 18px;
+                display: inline-block;
+                height: 29px;
+                background: url(../img/particulars/img/right_floating.min.png) no-repeat;
+                background-position: -36px -130px;
             }
         }
         .item_04:hover{
@@ -257,7 +262,7 @@
             position: relative;
             z-index: 991;
             h4{
-                width: 220px;
+                width: 219px;
                 height: 40px;
                 line-height: 40px;
                 background: green;
@@ -279,7 +284,7 @@
                 position: absolute;
                 top: 40px;
                 left: 0;
-                z-index: 991;
+                z-index: 99991;
                 .two_list_good{
                     background: #000;
                     min-height: 488px;

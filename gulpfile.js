@@ -72,6 +72,15 @@ gulp.task('index_img', () => {
     .pipe(gulp.dest('./dist/img/index/img'))
 })
 
+// // 发布任务将 list img 压缩
+gulp.task('list_img', () => {
+    gulp.src('./src/img/list/img/*.*')
+        .pipe(imagemin())
+        .pipe(rename({suffix:'.min'}))
+    .pipe(gulp.dest('./dist/img/list/img'))
+})
+
+
 // 发布任务添加监听
 gulp.task('default', () => { 
     // es6转es5

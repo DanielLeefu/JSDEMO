@@ -88,29 +88,29 @@ $list.each(function () {
 
 
 // // 点击出现购物车
-// let quick_count = 0;
-// $(".click_buy").click(function () { 
-//     quick_count++;
-//     if (quick_count % 2 === 1) {
-//         $('.right_quick_buy').css({ visibility: 'visible' });
+let quick_count = 0;
+$(".click_buy").click(function () { 
+    quick_count++;
+    if (quick_count % 2 === 1) {
+        $('.right_quick_buy').css({ visibility: 'visible' });
 
-//         let cookieStr = $.cookie('carts') ? $.cookie('carts') : '';
-//         let cookieObj = cookieStrToObj(cookieStr);
-//         for (let SPid in cookieObj) { 
-//             let buy_dis_num = cookieObj[SPid].num;
-//             let buy_price = cookieObj[SPid].price;
-//         //加到点击出现的购物车上
-//             let all_mony = buy_price * buy_dis_num;
-//             $('.buy_num_span').text(buy_dis_num);
-//             $('.buy_num_all').text( `￥${all_mony}`);     
-//         }
-//     } else { 
+        let cookieStr = $.cookie('carts') ? $.cookie('carts') : '';
+        let cookieObj = cookieStrToObj(cookieStr);
+        for (let SPid in cookieObj) { 
+            let buy_dis_num = cookieObj[SPid].num;
+            let buy_price = cookieObj[SPid].price;
+        //加到点击出现的购物车上
+            let all_mony = buy_price * buy_dis_num;
+            $('.buy_num_span').text(buy_dis_num);
+            $('.buy_num_all').text( `￥${all_mony}`);     
+        }
+    } else { 
      
-//         $('.right_quick_buy').css({ visibility: 'hidden'});
+        $('.right_quick_buy').css({ visibility: 'hidden'});
 
-//     }
+    }
 
-// })
+})
 
 
 

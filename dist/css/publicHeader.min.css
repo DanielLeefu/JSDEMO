@@ -70,7 +70,6 @@ input {
 #top .top_col {
   width: 1200px;
   height: 30px;
-  background: pink;
   margin: 0 auto;
 }
 
@@ -130,6 +129,7 @@ input {
   background: #fff;
   overflow: visible;
   box-shadow: 0 1px 1px 1px #dddddd;
+  z-index: 999;
 }
 
 #top .top_list_r .item_03 .drop_down_li li {
@@ -180,10 +180,14 @@ input {
 }
 
 #top .top_list_r .item_04 .num {
+  vertical-align: top;
   font-size: 5px;
   color: #f5f5f5;
-  background: orange;
-  border-radius: 50%;
+  width: 18px;
+  display: inline-block;
+  height: 29px;
+  background: url(../img/particulars/img/right_floating.min.png) no-repeat;
+  background-position: -36px -130px;
 }
 
 #top .top_list_r .item_04:hover {
@@ -340,7 +344,7 @@ input {
 }
 
 #header_nav .header_nav_col .cat_all h4 {
-  width: 220px;
+  width: 219px;
   height: 40px;
   line-height: 40px;
   background: green;
@@ -364,7 +368,7 @@ input {
   position: absolute;
   top: 40px;
   left: 0;
-  z-index: 991;
+  z-index: 99991;
 }
 
 #header_nav .header_nav_col .cat_all .two_list .two_list_good {

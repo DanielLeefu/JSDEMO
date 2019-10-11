@@ -1,0 +1,689 @@
+@import 'public';
+
+// 右边
+.right_quick{
+    width: 42px;
+    height: 100%;
+    position: fixed;
+    background: #323232;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    .quick_links{
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-top: 48px;
+        width: 40px;
+        ul{
+            .quick_cark{
+                margin-bottom: 160px;
+                width: 40px;
+                height: 130px;
+                .click_buy{
+                    height: 133px;
+                    line-height: 16px;
+                    margin: 80px 0 10px;
+                    background-position: -23px -225px;
+                    color: #fff;
+                    width: 40px;
+                    display: block;
+                    i{
+                        margin-left: 6px;
+                        color: #1A9733;
+                        margin-top: 10px;
+                        font-size: 26px;
+                    }
+                    div{
+                        width: 16px;
+                        display: block;
+                        height: 48px;
+                        margin: 22px 0 0 14px;
+                        font-size: 12px;
+                    }
+                    .cart_num{
+                        width: 28px;
+                        height: 29px;
+                        display: block;
+                        text-align: center;
+                        margin-top: 9px;
+                        margin-left: 6px;
+                        cursor: pointer;
+                        font-family: Verdana;
+                        font-size: 11px;
+                        color: #fff;
+                        line-height: 26px;
+                        background: url(../img/particulars/img/right_floating.min.png) no-repeat;
+                        background-position: -32px -130px;
+                    }
+                }
+            }
+            .quick_cark:hover{
+                background: #1A9733;
+            }
+            .quick_cark:hover i{
+                color: #fff;
+            }
+
+            .quick_qq{
+                position: relative;
+                a{
+                    i{
+                             font-size: 37px;
+                             color: #fff;
+                    }
+               
+                }
+                div{
+                    text-align: center;
+                    width: 144px;
+                    height: 36px;
+                    line-height: 36px;
+                    position: absolute;
+                    right:42px;
+                    top: 3px;
+                    font-size: 14px;
+                    background: green; 
+                    z-index: 2;
+                    color: #fff;
+                    display: none;
+                }
+            }
+            .quick_qq:hover div{
+                display: block;
+            }
+            .quick_qq:hover i{
+                background: #1A9733;
+            }
+            .quick_phone{
+                position: relative;
+                padding: 15px 0;
+                a{
+                    i{
+                             font-size: 37px;
+                             color: #fff;
+                    }
+               
+                }
+                div{
+                    text-align: center;
+                    width: 144px;
+                    height: 36px;
+                    line-height: 36px;
+                    position: absolute;
+                    right:42px;
+                    top: 18px;
+                    font-size: 11px;
+                    background: green; 
+                    z-index: 2;
+                    color: #fff;
+                    display: none;
+                }
+            }
+            .quick_phone:hover div{
+                display: block;
+            }
+            .quick_phone:hover i{
+                background: #1A9733;
+            }
+            .quick_ma{
+                position: relative;
+                a{
+                    i{
+                             font-size: 37px;
+                             color: #fff;
+                    }
+               
+                }
+                div{
+                    display: none;
+                    text-align: center;
+                    width: 144px;
+                    height: 36px;
+                    line-height: 36px;
+                    position: absolute;
+                    right:76px;
+                    top: -109px;
+                    font-size: 14px;
+                    background: green; 
+                    z-index: 2;
+                }
+            }
+            .quick_ma:hover div{
+                display: block;
+            }
+            .quick_ma:hover i{
+                background: #1A9733;
+            }
+
+            .quick_top{
+                position: relative;
+                margin-top: 50px;
+                a{
+                    i{
+                             font-size: 37px;
+                             color: #f40;
+                    }
+               
+                }
+              
+            }
+            
+
+        }
+    }
+}
+
+// 右边购物车
+.right_quick_buy{
+    position: fixed;
+    width: 330px;
+    right: 40px;
+    background: #fff;
+    height: 100%;
+    box-shadow: 0 0 5px #999;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #999;
+    z-index: 18;
+    visibility: hidden;
+    .wrap_top{
+        position: fixed;
+        top: 0;
+        width: 310px;
+        height: 35px;
+        display: block;
+        margin: 0 auto;
+        padding-left: 20px;
+        background-color: #fafafc;
+        i{
+            width: 19px;height: 19px;
+            float: left;
+            margin-top: 7px;
+            background: url(../img/particulars/img/shop.min.png) no-repeat;
+
+        }
+        s{
+            position: relative;
+            left: 0px;
+            top: 7px;
+            width: 52px;
+            height: 17px;
+            display: block;
+            border: 1px solid #1EAA39;
+         
+            font-weight: normal;
+            font-size: 12px;
+            float: left;
+            text-align: center;
+            color: #1EAA39;
+            line-height: 17px;
+            text-decoration: none;
+            cursor: pointer;
+            background-color: #fff;
+        }
+        span{
+            line-height: 30px;
+            margin-left: 20px;
+        }
+    }
+    .wrap_top_clear{
+        width: 100%;
+        height: 35px;
+    }
+// ++++++++++++++++++++++++++++++++++++++++++
+    // 加入购物车列表
+    .right_quick_list{
+        width: 280px;
+        padding-left: 20px;
+        li{
+            width: 280px;
+            overflow: hidden;
+            margin: 15px 0;
+            .list_cart_img{
+                width: 80px;
+                float: left;
+            }
+            .list_cart_msg{
+                width: 180px;
+                float: right;
+                p{
+                    width: 170px;
+    line-height: 20px;
+    overflow: hidden;
+    font-family: simsun;
+    font-size: 12px;
+    color: #333333;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+                }
+                span{
+                    float: left;
+                    display: inline-block;
+                    margin-left: 10px;
+                    color: #E74C3C;
+                    font-size: 12px;
+                    em{
+                        color: #333333;
+                    }
+                }
+                a{
+                    font-size: 12px;
+    float: right;
+    margin-right: 10px;
+
+                }
+            }
+        }
+    }
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    .wrap_bottom{
+        position: fixed;
+        bottom: 0;
+        height: 50px;
+        font-size: 12px;
+        .wrap_bottom_left{
+            float: left;
+            width: 190px;
+            background-color: #F5F5F5;
+            padding-left: 20px;
+            line-height: 50px;
+              color: #666666;
+            span{
+              
+                color: #E4462C;
+                font-weight: bold;
+            }
+        }
+        .wrap_bottom_right{
+            float: left;
+            width: 100px;
+            line-height: 50px;
+            a{
+                display: block;
+                width: 100px;
+                height: 50px;
+                background-color: #1EAA39;
+                color: #fff;
+                font-size: 14px;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+
+
+// 中间
+#listMiddle{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    .cw_left{
+        overflow: hidden;
+        .search_banner{
+            width: 950px;
+            overflow: hidden;
+            display: block;
+            border-bottom: 1px solid #eeeeee;
+            img{
+                width: 950px;
+                height: 240px;
+            }
+        }
+        .search_control{
+            width: 950px;
+            display: block;
+            overflow: hidden;
+            span{
+                width: 100px;
+                height: 36px;
+                border-bottom: 1px solid #eeeeee;
+                background-color: #FAFAFC;
+                float: left;
+                display: block;
+                font-size: 12px;
+                color: #666666;
+                display: block;
+                padding-top: 20px;
+                padding-left: 20px;
+            }
+            ul{
+                width: 767px;
+                overflow: hidden;
+                float: left;
+                border-bottom: 1px solid #eeeeee;
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                li{
+                    width: auto;
+                    height: 36px;
+                    float: left;
+                    margin-right: 40px;
+                    zoom: 1;
+                    a{
+                        height: 16px;
+                        margin-top: 10px;
+                        padding-left: 3px;
+                        padding-right: 3px;
+                        display: block;
+                        text-align: center;
+                        font-size: 12px;
+                        color: #333333;
+                        line-height: 16px;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+        .search_control_nav{
+            width: 950px;
+            display: block;
+            overflow: hidden;
+            span{
+                width: 100px;
+                height: 36px;
+                border-bottom: 1px solid #eeeeee;
+                background-color: #FAFAFC;
+                float: left;
+                display: block;
+                font-size: 12px;
+                color: #666666;
+                display: block;
+                padding-top: 20px;
+                padding-left: 20px;
+            }
+            .ul_li{
+                width: 767px;
+                height: 36px;
+                overflow: hidden;
+                float: left;
+                border-bottom: 1px solid #eeeeee;
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                li{
+                    
+                    height: 36px;
+                    float: left;
+                    margin-right: 40px;
+                  
+                    a{
+                        float: left;
+                        height: 16px;
+                        margin-top: 10px;
+                        padding-left: 3px;
+                        padding-right: 3px;
+                        display: block;
+                        text-align: center;
+                        font-size: 12px;
+                        color: #333333;
+                        line-height: 16px;
+                        white-space: nowrap;
+                    }
+                    .all{
+                        background: green;
+                        color: #fff;
+                    }
+                    }
+            }
+        }
+        .list_content{
+            width: 950px;
+            overflow: hidden;
+            float: left;
+            .Ic_title{
+                width: 950px;
+                height: 50px;
+                display: block;
+                margin: 0 auto;
+                margin-top: 20px;
+                border-top: 2px solid #1EAA39;
+                border-right: 1px solid #eeeeee;
+                border-left: 1px solid #eeeeee;
+                border-bottom: 1px solid #eeeeee;
+                background-color: #FAFAFC;
+                .Ic_title_left{
+                    height: 47px;
+                    float: left;
+                    cursor: pointer;
+                    span{
+                        width: 96px;
+                        height: 47px;
+                        float: left;
+                        border-right: 1px solid #eeeeee;
+                        font-size: 12px;
+                        color: #333333;
+                        text-align: center;
+                        line-height: 47px;
+                    }
+                }
+                .Ic_title_right{
+                    width: 310px;
+                    height: 47px;
+                    float: right;
+                    p{
+                        width: 160px;
+                        height: 47px;
+                        line-height: 47px;
+                        float: left;
+                        overflow: hidden;
+                        font-family: Verdana, Simsun;
+                        font-size: 12px;
+                        color: #666666;
+                        span{
+                            color: green;
+                        }
+
+                    }
+                    .page_total{
+                        width: 124px;
+                        height: 32px;
+                        float: right;
+                        margin-right: 10px;
+                        margin-top: 10px;
+                        span{
+                            width: 50px;
+                            height: 30px;
+                            border: 1px solid #eeeeee;
+                            background-color: #fff;
+                            float: left;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .list_content_item{
+                width: 950px;
+                overflow: hidden;
+                margin: 0 auto;
+                ul{
+                    position: relative;
+                    right: 10px;
+                    width: 970px;
+                    overflow: hidden;
+                    display: block;
+                    padding-top: 20px; 
+                    li{
+                        width: 220px;
+                        height: 360px;
+                        float: left;
+                        border: 1px solid #eeeeee;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        margin-bottom: 20px;
+                     .img{
+                         position: relative;
+                         width: 218px;
+                         height: 220px;
+                         display: block;
+                         margin: 0 auto;
+                         img{
+                            width: 218px;
+                            height: 220px;
+                         }
+                .dis_div{
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    
+                    z-index: 999;
+                    opacity: 0.4;
+                    background: green;
+                width: 218px;
+                height:40px;
+                line-height: 40px;
+                color: #fff;
+                .i1{
+                    font-size: 12px;
+                    float: left;
+                    margin-left: 5px;
+                }
+                .sp1{
+                    font-size: 12px;
+                    margin-left: 10px;
+                    float: left;
+                }
+                .sp2{
+                    float: right;
+                    margin-right: 10px;
+                    font-size: 12px;
+                }
+                .i2{
+                    margin-right: 5px;
+                    font-size: 12px;
+                    float: right;
+                }
+                }
+               
+                     }
+                    
+
+                     }
+                    li:hover{
+                        border: 1px solid green;                    } 
+                     .good_price{
+                        display: block;
+                        float: left;
+                        margin-top: 20px;
+                        margin-left: 20px;
+                        margin-bottom: 10px;
+                        font-family: Verdana, Simsun;
+                        font-size: 16px;
+                        color: #E4462C;
+                        font-weight: bold;
+                     }   
+                     .warp_name{
+                        width: 90%;
+                        overflow: hidden;
+                        display: block;
+                        margin: 0 auto;
+                        p{
+                            width: 100%;
+                            height: 32px;
+                            overflow: hidden;
+                            display: block;
+                            margin: 0 auto;
+                            margin-bottom: 15px;
+                            text-overflow: ellipsis;
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: #333333;
+
+                        }
+                        .from_title{
+                            position: relative;
+                            width: 100%;
+                            display: block;
+                            height: 20px;
+                            line-height: 20px;
+                            float: left;
+                            s{
+                                position: absolute;
+                            right: 0px;
+                            top: 0;
+                            width: 52px;
+                            height: 18px;
+                            display: block;
+                            border: 1px solid #1EAA39;
+                          
+                            font-weight: normal;
+                            font-size: 12px;
+                            color: #1EAA39;
+                            line-height: 17px;
+                            text-align: center;
+                            text-decoration: none;
+                            cursor: pointer;
+                            background-color: #fff;
+                            margin: 0 0 0 117px;
+                            }
+                        }
+
+                     }
+                    } 
+                }
+            }
+        }
+
+    }
+    .cw_right{
+        height: 100%;
+        overflow: hidden;
+        border-left:1px solid #eeeeee; 
+        ul{
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 20px; 
+            h4{
+                width: 90px;
+                height: 22px;
+                margin-top: 30px;
+                margin-bottom: 10px;
+                display: block;
+                font-family: "SimHei", "黑体";
+                font-size: 16px;
+                font-weight: bold;
+                color: #1A9733;
+            }
+            li{
+                a{
+                    color: #666666;
+                    img{
+                        margin: 0 auto;
+                        width: 150px;
+                        height: 150px;
+                        margin: 10px 0;
+                        display: block;
+                    }
+                    p{
+                        width: 144px;
+                        height: 35px;
+                        display: block;
+                        margin: 0 auto;
+                        margin-bottom: 5px;
+                        overflow: hidden;
+                        font-size: 12px;
+                        color: #666666;
+                        line-height: 18px;
+                    }
+                    span{
+                        width: 144px;
+                        height: 26px;
+                        display: block;
+                        margin: 0 auto;
+                        font-family: verdana;
+                        font-size: 18px;
+                        color: #E4462C;
+                    }
+                }
+            }
+
+        }
+    }
